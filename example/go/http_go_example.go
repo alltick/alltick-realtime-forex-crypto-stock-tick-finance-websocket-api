@@ -2,30 +2,30 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"strings"
 	"io/ioutil"
+	"log"
 	"net/http"
+	"strings"
 )
 
 func http_example() {
 
 	/*
-		将如下JSON进行url的encode，复制到http的查询字符串的query字段里
+		Encode the following JSON into URL and copy it to the query field of the HTTP query string
 		{"trace" : "go_http_test1","data" : {"code" : "700.HK","kline_type" : 1,"kline_timestamp_end" : 0,"query_kline_num" : 2,"adjust_type": 0}}
-		
-		特别注意：
-		github: https://github.com/alltick/free-quote
-		token申请：https://alltick.co
-		把下面url中的testtoken替换为您自己的token
-		外汇，加密货币（数字币），贵金属的api址：
+
+		Note:
+		GitHub: https://github.com/alltick/free-quote
+		Token application: https://alltick.co
+		Replace "testtoken" in the URL below with your own token
+		API addresses for forex, cryptocurrencies, and precious metals:
 		https://quote.tradeswitcher.com/quote-b-api
-		股票api地址:
+		Stock API address:
 		https://quote.tradeswitcher.com/quote-stock-b-api
 	*/
 	url := "https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline?token=testtoken"
-	log.Println("请求内容：", url)
-	// 创建一个http.Client对象
+	log.Println("Request Content:", url)
+	// Create an http.Client object
 	client := &http.Client{}
 
 	body := strings.NewReader(`{"trace": "3380a7a-3e1f-c3a5-5ee3-9e5be0ec8c241692805461","data": {"data_list": [
@@ -33,7 +33,7 @@ func http_example() {
 {"code": "USDJPY","kline_type": 1,"kline_timestamp_end": 0,"query_kline_num": 1000,"adjust_type": 0},
 {"code": "AAPL.US","kline_type": 1,"kline_timestamp_end": 0,"query_kline_num": 1000,"adjust_type": 0},
 {"code": "GOLD","kline_type": 1,"kline_timestamp_end": 0,"query_kline_num": 1000,"adjust_type": 0}
-]}}`) // 请求body
+]}}`) // Request body
 
 	req, err := http.NewRequest("GET", url, body)
 	if err != nil {
@@ -41,7 +41,7 @@ func http_example() {
 		return
 	}
 
-	// 发送请求
+	// Send the request
 	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Println("Error sending request:", err)
@@ -53,12 +53,12 @@ func http_example() {
 
 	if err != nil {
 
-		log.Println("读取响应失败：", err)
+		log.Println("Failed to read response:", err)
 
 		return
 
 	}
 
-	log.Println("响应内容：", len(body2))
+	log.Println("Response Content:", len(body2))
 
 }

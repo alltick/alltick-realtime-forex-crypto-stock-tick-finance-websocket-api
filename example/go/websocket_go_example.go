@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -26,32 +25,32 @@ type Request struct {
 }
 
 /*
-	特别注意：
-	github: https://github.com/alltick/free-quote
-	token申请：https://alltick.co
-	把下面url中的testtoken替换为您自己的token
-	外汇，加密货币（数字币），贵金属的api址：
+	Special Note:
+	GitHub: https://github.com/alltick/free-quote
+	Token Application: https://alltick.co
+	Replace "testtoken" in the URL below with your own token
+	API addresses for forex, cryptocurrencies, and precious metals:
 	wss://quote.tradeswitcher.com/quote-b-ws-api
-	股票api地址:
+	Stock API address:
 	wss://quote.tradeswitcher.com/quote-stock-b-ws-api
 */
-const(
-	url ="wss://quote.tradeswitcher.com/quote-b-ws-api?token=testtoken"
+const (
+	url = "wss://quote.tradeswitcher.com/quote-b-ws-api?token=testtoken"
 )
 
 func websocket_example() {
 
 	log.Println("Connecting to server at", url)
 
-    c, _, err := websocket.DefaultDialer.Dial(url, nil)
-    if err != nil {
-        log.Fatal("dial:", err)
-    }
-    defer c.Close()
+	c, _, err := websocket.DefaultDialer.Dial(url, nil)
+	if err != nil {
+		log.Fatal("dial:", err)
+	}
+	defer c.Close()
 
-	//定时10秒发一次心跳
-    go func() {
-    	for range time.NewTicker(10*time.Second).C{
+	// Send heartbeat every 10 seconds
+	go func() {
+		for range time.NewTicker(10 * time.Second).C {
 			req := Request{
 				CmdID: 22000,
 				SeqID: 123,
@@ -60,10 +59,10 @@ func websocket_example() {
 			}
 			messageBytes, err := json.Marshal(req)
 			if err != nil {
-				log.Println("json.Marshal error：", err)
+				log.Println("json.Marshal error:", err)
 				return
 			}
-			log.Println("req data：", string(messageBytes))
+			log.Println("req data:", string(messageBytes))
 
 			err = c.WriteMessage(websocket.TextMessage, messageBytes)
 			if err != nil {
@@ -76,32 +75,32 @@ func websocket_example() {
 		CmdID: 22002,
 		SeqID: 123,
 		Trace: uuid.New().String(),
-		Data:  Data{SymbolList: []Symbol{
-			{"GOLD",5},
-			{"AAPL.US",5},
-			{"700.HK",5},
-			{"USDJPY",5},
+		Data: Data{SymbolList: []Symbol{
+			{"GOLD", 5},
+			{"AAPL.US", 5},
+			{"700.HK", 5},
+			{"USDJPY", 5},
 		}},
 	}
 	messageBytes, err := json.Marshal(req)
 	if err != nil {
-		log.Println("json.Marshal error：", err)
+		log.Println("json.Marshal error:", err)
 		return
 	}
-	log.Println("req data：", string(messageBytes))
+	log.Println("req data:", string(messageBytes))
 
-    err = c.WriteMessage(websocket.TextMessage, messageBytes)
-    if err != nil {
-        log.Println("write:", err)
-    }
+	err = c.WriteMessage(websocket.TextMessage, messageBytes)
+	if err != nil {
+		log.Println("write:", err)
+	}
 
-    req.CmdID = 22004
+	req.CmdID = 22004
 	messageBytes, err = json.Marshal(req)
 	if err != nil {
-		log.Println("json.Marshal error：", err)
+		log.Println("json.Marshal error:", err)
 		return
 	}
-	log.Println("req data：", string(messageBytes))
+	log.Println("req data:", string(messageBytes))
 
 	err = c.WriteMessage(websocket.TextMessage, messageBytes)
 	if err != nil {
@@ -109,7 +108,7 @@ func websocket_example() {
 	}
 
 	rece_count := 0
-	for{
+	for {
 		_, message, err := c.ReadMessage()
 
 		if err != nil {
@@ -120,11 +119,9 @@ func websocket_example() {
 		}
 
 		rece_count++
-		if rece_count % 10000 == 0 {
+		if rece_count%10000 == 0 {
 			log.Println("count:", rece_count, " Received message:", string(message))
 		}
 	}
 
-
 }
-

@@ -1,113 +1,116 @@
-## 作者：AllTick
-## 项目名称：AllTick Real-time Quotation APIs
+> [English](./README.md) | [中文](./README_cn.md)
 
-# 实时金融市场数据API, 实时外汇数据API, 实时股票数据API, 实时加密货币数据API, 实时商品数据API服务, 实时Tick数据, 逐笔报价, 数据接入解决方案
+## Author: AllTick
 
-简单好用易上手的免费开源股票API、港股API、美股API、沪深股票API、A股API、外汇API、商品贵金属API、加密货币API等实时行情数据
+## Project Name: AllTick Real-time Quotation APIs
 
-## 官网
+# Real-time Financial Market Data API, Real-time Forex Data API, Real-time Stock Data API, Real-time Cryptocurrency Data API, Real-time Commodity Data API Service, Real-time Tick Data, Tick-by-Tick Quotes, Data Access Solutions
+
+Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, US stock API, Shanghai and Shenzhen stock API, A-share API, forex API, commodity precious metals API, cryptocurrency API, and other real-time market data.
+
+## Official Website
 [alltick](https://alltick.co)
 
-## 功能特性：
+## Features:
 
-- 免费开源
+- Free and open source
 
-- 获取港股实时行情API
+- Get real-time Hong Kong stock quotes API
 
-- 获取港股实时10档盘口API
+- Get real-time 10-level order book API for Hong Kong stocks
 
-- 获取港股K线数据API
+- Get K-line data API for Hong Kong stocks
 
-- 获取美股实时行情API
+- Get real-time US stock quotes API
 
-- 获取美股实时一档盘口API
+- Get real-time Level 1 order book API for US stocks
 
-- 获取美股K线数据API
+- Get K-line data API for US stocks
 
-- 获取沪深A股实时行情API
+- Get real-time A-share stock quotes API
 
-- 获取沪深A股实时5档盘口API
+- Get real-time 5-level order book API for A-share stocks
 
-- 获取沪深A股K线数据API
+- Get K-line data API for A-share stocks
 
-- 获取加密货币实时行情API
+- Get real-time cryptocurrency quotes API
 
-- 获取加密货币实时多档盘口API
+- Get real-time multi-level order book API for cryptocurrencies
 
-- 获取加密货币K线数据API
+- Get K-line data API for cryptocurrencies
 
-- 获取外汇实时行情API
+- Get real-time forex quotes API
 
-- 获取外汇实时5档盘口API
+- Get real-time 5-level order book API for forex
 
-- 获取外汇K线数据API
+- Get K-line data API for forex
 
-- 获取贵金属实时行情API
+- Get real-time precious metals quotes API
 
-- 获取贵金属实时5档盘口API
+- Get real-time 5-level order book API for precious metals
 
-- 获取贵金属K线数据API
-
-  
-
-## 接入指南
-- [接入指南](./接入指南.md)
-## 接口介绍
-### 错误码说明
-- [错误码说明](./错误码说明.md)
-### 产品code列表
-- [产品code列表-A股](./产品code列表-A股.md)
-- [产品code列表-港股](./产品code列表-港股.md)
-- [产品code列表-加密货币(数字币)](./产品code列表-加密货币(数字币).md)
-- [产品code列表-美股](./产品code列表-美股.md)
-- [产品code列表-商品(贵金属)](./产品code列表-商品(贵金属).md)
-- [产品code列表-外汇](./产品code列表-外汇.md)
-
-### http接口
-- [行情API地址说明](./http接口/API地址说明.md)
-- [接口限制](./http接口/接口限制.md)
-- [通用标准头](./http接口/通用标准头.md)
-- [获取最新成交报价查询](./http接口/最新成交报价查询.md)
-- [最新盘口报价查询](./http接口/最新盘口报价查询.md)
-- [K线查询](./http接口/K线查询.md)
-- [批量K线查询](./http接口/批量K线查询.md)
-
-### websocket接口
-- [行情API地址说明](./websocket接口/API地址说明.md)
-- [接口限制](./websocket接口/接口限制.md)
-- [通用标准头](./websocket接口/通用标准头.md)
-- [心跳](./websocket接口/心跳.md)
-- [成交报价订阅](./websocket接口/成交报价订阅.md)
-- [盘口报价订阅](./websocket接口/盘口报价订阅.md)
-- [取消报价订阅](./websocket接口/取消报价订阅.md)
-
-## 免费token获取
-- [token申请](./token申请.md)
-
-## 使用示例,超简单上手
-### php:
-
-- [http请求示例](./example/php/php_http_curl.php)
-- [websocket请求示例](./example/php/php_websocket_workerman.php)
-
-### python:
-
-- [http请求示例](./example/python/http_python_example.py)
-- [websocket请求示例](./example/python/websocket_python_example.py)
-
-### go:
-- [http请求示例](./example/go/http_go_example.go)
-- [websocket请求示例](./example/go/websocket_go_example.go)
-
-### java:
-- [http请求示例](./example/java/HttpJavaExample.java)
-- [websocket请求示例](./example/java/WebSocketJavaExample.java)
+- Get K-line data API for precious metals
 
 
-## 联系我们
+## Integration Guide
+- [Integration Guide](./access_guide.md)
 
-- Telegram: https://t.me/TS_SUPPORT_Lester
+## Interface Introduction
+### Error Code Description
+- [Error Code Description](./error_code_description.md)
+
+### Product Code List
+- [Product Code List - A-share](./product_code_list_A_stock.md)
+- [Product Code List - Hong Kong Stock](./product_code_list_HK_stock.md)
+- [Product Code List - Cryptocurrency (Digital Currency)](./product_code_list_cryptocurrency.md)
+- [Product Code List - US Stock](./product_code_list_US_stock.md)
+- [Product Code List - Commodity (Precious Metals)](./product_code_list_commodities_gold.md)
+- [Product Code List - Forex](./product_code_list_forex.md)
+
+### HTTP Interface
+- [Quotation API Address Description](./http_interface/api_address_description.md)
+- [Interface Restrictions](./http_interface/interface_limitation.md)
+- [Common Standard Headers](./http_interface/common_standard_header.md)
+- [Get Latest Transaction Quote Query](./http_interface/latest_transaction_price_query.md)
+- [Get Latest Order Book Quote Query](./http_interface/latest_order_book_price_query.md)
+- [K-Line Query](./http_interface/kline_query.md)
+- [Batch K-Line Query](./http_interface/batch_kline_query.md)
+
+### WebSocket Interface
+- [Quotation API Address Description](./websocket_interface/api_address_description.md)
+- [Interface Restrictions](./websocket_interface/interface_limitation.md)
+- [Common Standard Headers](./websocket_interface/common_standard_header.md)
+- [Heartbeat](./websocket_interface/heartbeat.md)
+- [Realtime Transaction Quote Subscription](./websocket_interface/realtime_transaction_quote_subscription.md)
+- [Realtime Order Book Quote Subscription](./websocket_interface/realtime_order_book_quote_subscription.md)
+- [Cancel Realtime Quote Subscription](./websocket_interface/cancel_realtime_quote_subscription.md)
+
+## Free Token Acquisition
+- [Token Application](./token_application.md)
+
+## Usage Examples, Easy to Get Started
+### PHP:
+
+- [HTTP Request Example](./Examples/PHP/php_http_curl.php)
+- [WebSocket Request Example](./Examples/PHP/php_websocket_workerman.php)
+
+### Python:
+
+- [HTTP Request Example](./Examples/Python/http_python_example.py)
+- [WebSocket Request Example](./Examples/Python/websocket_python_example.py)
+
+### Go:
+- [HTTP Request Example](./Examples/Go/http_go_example.go)
+- [WebSocket Request Example](./Examples/Go/websocket_go_example.go)
+
+### Java:
+- [HTTP Request Example](./Examples/Java/HttpJavaExample.java)
+- [WebSocket Request Example](./Examples/Java/WebSocketJavaExample.java)
+
+## Contact Us
+
+- Telegram: [https://t.me/TS_SUPPORT_Lester](https://t.me/TS_SUPPORT_Lester)
 - Email: lester.lin@chixi88.com
 
-## 其他作品
-官网:[https://alltick.co](https://alltick.co)
+## Other Works
+Official Website: [https://alltick.co](https://alltick.co)

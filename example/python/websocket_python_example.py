@@ -2,20 +2,20 @@ import json
 import websocket    # pip install websocket-client
 
 '''
-# 特别注意：
-# github: https://github.com/alltick/free-quote
-# token申请：https://alltick.co
-# 把下面url中的testtoken替换为您自己的token
-# 外汇，加密货币（数字币），贵金属的api址：
+# Special Note:
+# GitHub: https://github.com/alltick/free-quote
+# Token Application: https://alltick.co
+# Replace "testtoken" in the URL below with your own token
+# API addresses for forex, cryptocurrencies, and precious metals:
 # wss://quote.tradeswitcher.com/quote-b-ws-api
-# 股票api地址:
+# Stock API address:
 # wss://quote.tradeswitcher.com/quote-stock-b-ws-api
 '''
 
 class Feed(object):
 
     def __init__(self):
-        self.url = 'wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=testtoken'  # 这里输入websocket的url
+        self.url = 'wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=testtoken'  # Enter your websocket URL here
         self.ws = None
 
     def on_open(self, ws):
@@ -26,9 +26,9 @@ class Feed(object):
         """
         print('A new WebSocketApp is opened!')
 
-        # 开始订阅（举个例子）
+        # Start subscribing (an example)
         sub_param = {
-            "cmd_id": 22002, 
+            "cmd_id": 22002,
             "seq_id": 123,
             "trace":"3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
             "data":{
@@ -44,15 +44,15 @@ class Feed(object):
                 ]
             }
         }
-        
-        #如果希望长时间运行，除了需要发送订阅之外，还需要修改代码，定时发送心跳，避免连接断开，具体查看接口文档
+
+        # If you want to run for a long time, you need to modify the code to send heartbeats periodically to avoid disconnection, please refer to the API documentation for details
         sub_str = json.dumps(sub_param)
         ws.send(sub_str)
         print("depth quote are subscribed!")
 
     def on_data(self, ws, string, type, continue_flag):
         """
-        4 argument.
+        4 arguments.
         The 1st argument is this class object.
         The 2nd argument is utf-8 string which we get from the server.
         The 3rd argument is data type. ABNF.OPCODE_TEXT or ABNF.OPCODE_BINARY will be came.
@@ -66,7 +66,7 @@ class Feed(object):
         @ ws: the WebSocketApp object
         @ message: utf-8 data received from the server
         """
-        # 对收到的message进行解析
+        # Parse the received message
         result = eval(message)
         print(result)
 
