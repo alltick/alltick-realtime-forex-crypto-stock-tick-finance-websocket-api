@@ -19,7 +19,7 @@
 
 ### Step 4: Please refer to the common standard headers documentation to understand the data format for requests and responses.
 
-- [HTTP Common Standard Headers](./http_interface/common_standard_header.md
+- [HTTP Common Standard Headers](./http_interface/common_standard_header.md)
 - [WebSocket Common Standard Headers](./websocket_interface/common_standard_header.md)
 
 ### Step 5: Please refer to the code list documentation to decide which product's market data you want.
