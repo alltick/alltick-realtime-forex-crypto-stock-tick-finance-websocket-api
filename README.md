@@ -1,3 +1,6 @@
+## 作者：AllTick
+## 项目名称：AllTick Real-time Quotation APIs
+
 # 免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据
 
 简单好用易上手的免费开源股票API、港股API、美股API、沪深股票API、A股API、外汇API、商品贵金属API、加密货币API等实时行情数据
