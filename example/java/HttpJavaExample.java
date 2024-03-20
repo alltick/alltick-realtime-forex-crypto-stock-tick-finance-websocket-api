@@ -13,7 +13,7 @@ public class HttpJavaExample {
             Encode the following JSON into URL format and copy it to the query field of the HTTP request
             {"trace" : "java_http_test1","data" : {"code" : "700.HK","kline_type" : 1,"kline_timestamp_end" : 0,"query_kline_num" : 2,"adjust_type": 0}}
             Special Note:
-            GitHub: https://github.com/alltick/free-quote
+            GitHub: https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api
             Token Application: https://alltick.co
             Replace "testtoken" in the URL below with your own token
             API addresses for forex, cryptocurrencies, and precious metals:

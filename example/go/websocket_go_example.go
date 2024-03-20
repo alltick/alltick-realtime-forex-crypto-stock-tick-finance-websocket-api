@@ -26,7 +26,7 @@ type Request struct {
 
 /*
 	Special Note:
-	GitHub: https://github.com/alltick/free-quote
+	GitHub: https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api
 	Token Application: https://alltick.co
 	Replace "testtoken" in the URL below with your own token
 	API addresses for forex, cryptocurrencies, and precious metals:
