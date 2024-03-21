@@ -9,7 +9,7 @@
 简单好用易上手的免费开源股票API、港股API、美股API、沪深股票API、A股API、外汇API、商品贵金属API、加密货币API等实时行情数据
 
 ## 官网
-[alltick](https://alltick.co)
+[https://alltick.co](https://alltick.co)
 
 ## 功能特性：
 
