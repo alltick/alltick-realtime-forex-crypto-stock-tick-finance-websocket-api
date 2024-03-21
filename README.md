@@ -9,7 +9,7 @@
 Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, US stock API, Shanghai and Shenzhen stock API, A-share API, forex API, commodity precious metals API, cryptocurrency API, and other real-time market data.
 
 ## Official Website
-[alltick](https://alltick.co)
+[https://alltick.co](https://alltick.co)
 
 ## Features:
 
