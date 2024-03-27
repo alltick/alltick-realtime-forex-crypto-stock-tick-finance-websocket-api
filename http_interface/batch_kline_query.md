@@ -2,7 +2,9 @@
 
 ## GET Batch K-Line Query
 
-GET /quote-b-api/batch-kline
+GET /batch-kline
+
+> Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
 Batch query K-line functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
 

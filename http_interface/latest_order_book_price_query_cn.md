@@ -2,7 +2,8 @@
 
 ## GET 最新盘口报价查询
 
-GET /quote-stock-b-api/depth-tick
+GET /depth-tick
+> 完整的URL请参见[API地址说明](./api_address_description_cn.md)
 
 ### 请求参数
 

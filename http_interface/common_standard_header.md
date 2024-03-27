@@ -9,7 +9,7 @@
 
 ```json
 {
-    "trace": "40f8-9555-14015e32b7a",
+    "trace": "c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
     "data": {
     }
 }
@@ -28,7 +28,7 @@
 {
     "ret": 202,
     "msg": "request data param invalid",
-    "trace": "40f8-9555-14015e32b7a",
+    "trace": "c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
     "data": {}
 }
 

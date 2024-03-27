@@ -2,7 +2,8 @@
 
 ## GET K线查询
 
-GET /quote-stock-b-api/kline
+GET /kline
+> 完整的URL请参见[API地址说明](./api_address_description_cn.md)
 
 ### 请求参数
 

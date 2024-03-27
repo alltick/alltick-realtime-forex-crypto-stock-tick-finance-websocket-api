@@ -2,7 +2,8 @@
 
 ## GET K-Line Query
 
-GET /quote-stock-b-api/kline
+GET /kline
+> Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
 ### Request Parameters
 

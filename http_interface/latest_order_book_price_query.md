@@ -2,7 +2,8 @@
 
 ## GET Latest Depth Tick Query
 
-GET /quote-stock-b-api/depth-tick
+GET /depth-tick
+> Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
 ### Request Parameters
 

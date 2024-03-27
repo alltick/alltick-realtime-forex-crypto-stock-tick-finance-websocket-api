@@ -8,7 +8,7 @@
 | data  | 数据体 | object | 是     | 具体数据格式见各个接口定义                      |
 ```json
 {
-    "trace":"asdfsdfa",
+    "trace":"c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
     "data":{
     }
 }
@@ -26,7 +26,7 @@
 {
     "ret":202,
     "msg":"request data param invalid",
-    "trace":"asdfsdfa",
+    "trace":"c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
     "data":{
     }    
 }

@@ -2,7 +2,9 @@
 
 ## GET Latest Trade Tick Query
 
-GET /quote-stock-b-api/trade-tick
+GET /trade-tick
+> Please refer to the complete URL in [API Address Description](./api_address_description.md)
+
 
 ### Request Parameters
 

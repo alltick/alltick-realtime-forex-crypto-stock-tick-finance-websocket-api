@@ -2,7 +2,9 @@
 
 ## GET 批量K线查询
 
-GET /quote-b-api/batch-kline
+GET /batch-kline
+
+> 完整的URL请参见[API地址说明](./api_address_description_cn.md)
 
 批量查询K线功能，由于批量查询参数比较多，放入body中，url参数中只保留token字段参数。
 
@@ -10,7 +12,7 @@ GET /quote-b-api/batch-kline
 
 ```json
 {
-  "trace": "py_http_test1",
+  "trace": "c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
   "data": {
     "data_list": [
       {
@@ -55,7 +57,7 @@ GET /quote-b-api/batch-kline
 {
   "ret": 200,
   "msg": "ok",
-  "trace": "asdfsdfa",
+  "trace": "c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
   "data": {
     "kline_list": [
       {
