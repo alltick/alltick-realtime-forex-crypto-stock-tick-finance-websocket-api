@@ -23,7 +23,7 @@
 wss://quote.tradeswitcher.com/quote-b-ws-api<br/>
 
 每一次建立连接时，需要带上token信息:<br/>
-wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=你的token<br/>
+wss://quote.tradeswitcher.com/quote-b-ws-api?token=你的token<br/>
 
 建立连接之后，就可以订阅具体的接口数据了，具体调用方式，请查看websocket接口列表<br/>
 
