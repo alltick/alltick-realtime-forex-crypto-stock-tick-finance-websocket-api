@@ -23,6 +23,6 @@ The subscription API uses the WebSocket protocol, and the complete URL is:<br/>
 wss://quote.tradeswitcher.com/quote-b-ws-api<br/>
 
 When establishing a connection, token information needs to be included:<br/>
-wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=your_token_here<br/>
+wss://quote.tradeswitcher.com/quote-b-ws-api?token=your_token_here<br/>
 
 After establishing the connection, you can subscribe to specific interface data. For specific calling methods, please refer to the WebSocket interface list.<br/>
