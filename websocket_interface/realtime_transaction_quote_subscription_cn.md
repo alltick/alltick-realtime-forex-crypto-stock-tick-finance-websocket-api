@@ -1,6 +1,6 @@
 > [English](./realtime_transaction_quote_subscription.md) | [中文](./realtime_transaction_quote_subscription_cn.md)
 
-# 接口说明
+# 订阅实时成交报价数据接口说明
 
 该接口特性为对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求。订阅成功后会进行推送数据。
 # 请求-协议号：22004
