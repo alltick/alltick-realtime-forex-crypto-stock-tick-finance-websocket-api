@@ -9,9 +9,20 @@
 
 每发送一次查询请求时，需要带上方法名和token信息<br/>
 
-请求示例：<br/>
-
+单产品请求K线示例：<br/>
 https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=你的token&query=queryData<br/>
+
+批产品请求K线示例：<br/>
+https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline?token=你的token
+注意：批产品请求K线时，请求参数放在body中
+
+请求最新成交价示例：<br/>
+https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick?token=你的token&query=queryData<br/>
+
+请求最新盘口示例：<br/>
+https://quote.tradeswitcher.com/quote-stock-b-api/depth-tick?token=你的token&query=queryData<br/>
+
+
 
 具体调用方式，请查看http接口列表<br/>
 
@@ -22,8 +33,17 @@ https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=你的token&query=
 
 每发送一次查询请求时，需要带上方法名和token信息<br/>
 
-请求示例：<br/>
-
+单产品请求K线示例：<br/>
 https://quote.tradeswitcher.com/quote-b-api/kline?token=你的token&query=queryData<br/>
+
+批产品请求K线示例：<br/>
+https://quote.tradeswitcher.com/quote-b-api/batch-kline?token=你的token
+注意：批产品请求K线时，请求参数放在body中
+
+请求最新成交价示例：<br/>
+https://quote.tradeswitcher.com/quote-b-api/trade-tick?token=你的token&query=queryData<br/>
+
+请求最新盘口示例：<br/>
+https://quote.tradeswitcher.com/quote-b-api/depth-tick?token=你的token&query=queryData<br/>
 
 具体调用方式，请查看http接口列表<br/>
