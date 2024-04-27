@@ -115,8 +115,12 @@ Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, U
 
 ## Contact Us
 
-- Telegram: [https://t.me/TS_SUPPORT_Lester](https://t.me/TS_SUPPORT_Lester)
-- Email: lester.lin@chixi88.com
+## Contact Us
+Email: support@alltick.co
+
+Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
+
+Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 
 ## Other Works
 Official Website: [https://alltick.co](https://alltick.co)
