@@ -114,8 +114,6 @@ Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, U
 - [WebSocket Request Example](./Examples/Java/WebSocketJavaExample.java)
 
 ## Contact Us
-
-## Contact Us
 Email: support@alltick.co
 
 Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
