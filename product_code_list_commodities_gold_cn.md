@@ -3,8 +3,9 @@
 # 免费试用Token仅支持以下code
 
 ## 需要更多产品可直接联系:<br/>
-- Telegram: https://t.me/TS_SUPPORT_Lester
-- Email: lester.lin@chixi88.com
+- Email: support@alltick.co
+- Skype: https://join.skype.com/invite/xokTc695huNu
+- Telegram: https://t.me/alltick001
 
 | 类别 | name | code |
 | --- | --- | --- |
