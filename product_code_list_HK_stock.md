@@ -3,8 +3,9 @@
 # Free trial tokens only support the following codes
 
 ## For more products, please contact directly:<br/>
-- Telegram: https://t.me/TS_SUPPORT_Lester
-- Email: lester.lin@chixi88.com
+- Email: support@alltick.co
+- Skype: https://join.skype.com/invite/xokTc695huNu
+- Telegram: https://t.me/alltick001
 
 | code    | Name                      |
 | ------- | ------------------------- |
