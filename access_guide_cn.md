@@ -26,7 +26,6 @@
 - [获取最新成交报价查询](./http_interface/latest_transaction_price_query_cn.md)
 - [最新盘口报价查询](./http_interface/latest_order_book_price_query_cn.md)
 - [K线查询](./http_interface/kline_query_cn.md)
-- [批量K线查询](./http_interface/batch_kline_query_cn.md)
 #### websocket接口
 - [心跳](./websocket_interface/heartbeat_cn.md)
 - [成交报价订阅](./websocket_interface/realtime_transaction_quote_subscription_cn.md)
