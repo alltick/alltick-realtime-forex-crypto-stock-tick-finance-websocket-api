@@ -1,7 +1,7 @@
 > [English](./product_code_list_cryptocurrency.md) | [中文](./product_code_list_cryptocurrency_cn.md)
 
 # 加密货币
-[加密货币code列表](./code/加密货币code200.txt)
+[加密货币code列表](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81code200.txt)
 
 ## 需要更多产品可直接联系:<br/>
 - Email: support@alltick.co

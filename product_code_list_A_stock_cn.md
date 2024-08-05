@@ -1,7 +1,7 @@
 > [English](./product_code_list_A_stock.md) | [中文](./product_code_list_A_stock_cn.md)
 
 # A股
-[A股code列表](./code/A股全code.xlsx)
+[A股code列表](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/A%E8%82%A1%E5%85%A8code.xlsx)
 
 ## 需要更多产品可直接联系:<br/>
 - Email: support@alltick.co

@@ -1,7 +1,7 @@
 > [English](./product_code_list_forex.md) | [中文](./product_code_list_forex_cn.md)
 
 # Forex
-[Forex And Commodity Code List](./code/外汇贵金属code列表.txt)
+[Forex And Commodity Code List](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/%E5%A4%96%E6%B1%87%E8%B4%B5%E9%87%91%E5%B1%9Ecode%E5%88%97%E8%A1%A8.txt)
 
 ## For more products, please contact directly:<br/>
 - Email: support@alltick.co
