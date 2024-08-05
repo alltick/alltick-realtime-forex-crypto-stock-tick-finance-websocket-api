@@ -1,11 +1,14 @@
 > [English](./product_code_list_US_stock.md) | [中文](./product_code_list_US_stock_cn.md)
 
-# Free trial tokens only support the following codes
+# US Stock
+[US Stock Code List](./code/美股code.xlsx)
 
 ## For more products, please contact directly:<br/>
 - Email: support@alltick.co
 - Skype: https://join.skype.com/invite/xokTc695huNu
 - Telegram: https://t.me/alltick001
+
+## Code Example
 
 | code    | Name                      |
 | ------- | ------------------------- |

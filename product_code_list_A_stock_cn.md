@@ -1,11 +1,14 @@
 > [English](./product_code_list_A_stock.md) | [中文](./product_code_list_A_stock_cn.md)
 
-# 免费试用Token仅支持以下code
+# A股
+[A股code列表](./code/A股全code.xlsx)
 
 ## 需要更多产品可直接联系:<br/>
 - Email: support@alltick.co
 - Skype: https://join.skype.com/invite/xokTc695huNu
 - Telegram: https://t.me/alltick001
+
+## code示例
 
 | code    | 名称                      |
 | ------- | ------------------------- |

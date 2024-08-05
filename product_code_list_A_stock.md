@@ -1,11 +1,14 @@
 > [English](./product_code_list_A_stock.md) | [中文](./product_code_list_A_stock_cn.md)
 
-# Free Trial Token Only Supports the Following Codes
+# A Share
+[A Share Code List](./code/A股全code.xlsx)
 
 ## For more products, please contact directly:<br/>
 - Email: support@alltick.co
 - Skype: https://join.skype.com/invite/xokTc695huNu
 - Telegram: https://t.me/alltick001
+
+## Code Example
 
 | Code     | Name              |
 | -------- | ----------------- |

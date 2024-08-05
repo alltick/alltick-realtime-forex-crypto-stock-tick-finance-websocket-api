@@ -1,11 +1,14 @@
 > [English](./product_code_list_cryptocurrency.md) | [中文](./product_code_list_cryptocurrency_cn.md)
 
-# 免费试用Token仅支持以下code
+# 加密货币
+[加密货币code列表](./code/加密货币code200.txt)
 
 ## 需要更多产品可直接联系:<br/>
 - Email: support@alltick.co
 - Skype: https://join.skype.com/invite/xokTc695huNu
 - Telegram: https://t.me/alltick001
+
+## code示例
 
 | 类别 | name | code |
 | --- | --- | --- |
