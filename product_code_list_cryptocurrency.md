@@ -1,7 +1,7 @@
 > [English](./product_code_list_cryptocurrency.md) | [中文](./product_code_list_cryptocurrency_cn.md)
 
 # Cryptocurrency
-[Cryptocurrency Code List](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81code200.txt)
+[Cryptocurrency All Code List](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81code200.txt)
 
 ## For more products, please contact directly:<br/>
 - Email: support@alltick.co

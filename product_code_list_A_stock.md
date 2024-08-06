@@ -1,7 +1,7 @@
 > [English](./product_code_list_A_stock.md) | [中文](./product_code_list_A_stock_cn.md)
 
 # A Share
-[A Share Code List](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/A%E8%82%A1%E5%85%A8code.xlsx)
+[A Share All Code List](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/A%E8%82%A1%E5%85%A8code.xlsx)
 
 ## For more products, please contact directly:<br/>
 - Email: support@alltick.co
