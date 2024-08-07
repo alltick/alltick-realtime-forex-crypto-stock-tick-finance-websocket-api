@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"strings"
 	"io/ioutil"
+	"log"
 	"net/http"
 )
 
@@ -13,7 +12,7 @@ func http_example() {
 	/*
 		将如下JSON进行url的encode，复制到http的查询字符串的query字段里
 		{"trace" : "go_http_test1","data" : {"code" : "700.HK","kline_type" : 1,"kline_timestamp_end" : 0,"query_kline_num" : 2,"adjust_type": 0}}
-		
+
 		特别注意：
 		github: https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api
 		token申请：https://alltick.co
@@ -23,26 +22,23 @@ func http_example() {
 		股票api地址:
 		https://quote.tradeswitcher.com/quote-stock-b-api
 	*/
-	url := "https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline?token=testtoken"
+	url := "https://quote.tradeswitcher.com/quote-stock-b-api/kline"
 	log.Println("请求内容：", url)
-	// 创建一个http.Client对象
-	client := &http.Client{}
 
-	body := strings.NewReader(`{"trace": "3380a7a-3e1f-c3a5-5ee3-9e5be0ec8c241692805461","data": {"data_list": [
-{"code": "700.HK","kline_type": 1,"kline_timestamp_end": 0,"query_kline_num": 1000,"adjust_type": 0},
-{"code": "USDJPY","kline_type": 1,"kline_timestamp_end": 0,"query_kline_num": 1000,"adjust_type": 0},
-{"code": "AAPL.US","kline_type": 1,"kline_timestamp_end": 0,"query_kline_num": 1000,"adjust_type": 0},
-{"code": "GOLD","kline_type": 1,"kline_timestamp_end": 0,"query_kline_num": 1000,"adjust_type": 0}
-]}}`) // 请求body
-
-	req, err := http.NewRequest("GET", url, body)
+	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		fmt.Println("Error creating request:", err)
 		return
 	}
 
+	q := req.URL.Query()
+	token := "testtoken"
+	q.Add("token", token)
+	queryStr := `{"trace":"1111111111111111111111111","data":{"code":"AAPL.US","kline_type":1,"kline_timestamp_end":0,"query_kline_num":10,"adjust_type":0}}`
+	q.Add("query", queryStr)
+	req.URL.RawQuery = q.Encode()
 	// 发送请求
-	resp, err := client.Do(req)
+	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		fmt.Println("Error sending request:", err)
 		return
@@ -59,6 +55,6 @@ func http_example() {
 
 	}
 
-	log.Println("响应内容：", len(body2))
+	log.Println("响应内容：", string(body2))
 
 }

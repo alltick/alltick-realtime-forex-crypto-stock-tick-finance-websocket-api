@@ -9,9 +9,9 @@
 // Stock API address:
 // https://quote.tradeswitcher.com/quote-stock-b-ws-api
 
-$params = '{"trace":"c5e6d492-baed-40bf-9b27-93119d2d4a0d-16920159919524472","data":{"data_list":[{"code":"5.HK","kline_type":"8","kline_timestamp_end":"0","query_kline_num":"1","adjust_type":"0"},{"code":"9988.HK","kline_type":"8","kline_timestamp_end":"0","query_kline_num":"1","adjust_type":"0"},{"code":"3690.HK","kline_type":"8","kline_timestamp_end":"0","query_kline_num":"1","adjust_type":"0"},{"code":"700.HK","kline_type":"8","kline_timestamp_end":"0","query_kline_num":"1","adjust_type":"0"},{"code":"2601.HK","kline_type":"8","kline_timestamp_end":"0","query_kline_num":"1","adjust_type":"0"}]}}';
+$params = '{"trace":"1111111111111111111111111","data":{"code":"AAPL.US","kline_type":1,"kline_timestamp_end":0,"query_kline_num":10,"adjust_type":0}}';
 
-$url = 'https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline?token=testtoken';
+$url = 'https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=testtoken';
 $method = 'GET';
 
 $opts = array(CURLOPT_TIMEOUT => 10, CURLOPT_RETURNTRANSFER => 1, CURLOPT_SSL_VERIFYPEER => false, CURLOPT_SSL_VERIFYHOST => false);
@@ -19,16 +19,8 @@ $opts = array(CURLOPT_TIMEOUT => 10, CURLOPT_RETURNTRANSFER => 1, CURLOPT_SSL_VE
 /* Set specific parameters based on request type */
 switch (strtoupper($method)) {
     case 'GET':
-        $opts[CURLOPT_URL] = $url;
+        $opts[CURLOPT_URL] = $url.'&query='.rawurlencode($params);
         $opts[CURLOPT_CUSTOMREQUEST] = 'GET';
-        $opts[CURLOPT_POSTFIELDS] = $params;
-        break;
-    case 'POST':
-        // Check if file transfer is required
-        $params = http_build_query($params);
-        $opts[CURLOPT_URL] = $url;
-        $opts[CURLOPT_POST] = 1;
-        $opts[CURLOPT_POSTFIELDS] = $params;
         break;
     default:
 }
