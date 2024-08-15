@@ -1,7 +1,7 @@
 > [English](./product_code_list_US_stock.md) | [中文](./product_code_list_US_stock_cn.md)
 
 # US Stock
-[US Stock All Code List](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/raw/main/code/%E7%BE%8E%E8%82%A1code.xlsx)
+[US Stock All Code List](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=583033325#gid=583033325)
 
 ## For more products, please contact directly:<br/>
 - Email: support@alltick.co
