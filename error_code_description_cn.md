@@ -2,12 +2,14 @@
 
 # 错误码说明
 
-| 错误码 | 含义                         |
-| ------ | ---------------------------- |
-| 200    | ok                           |
-| 400    | request header param invalid |
-| 400    | request data param invalid   |
-| 401    | token invalid                |
-| 429    | rate limit                   |
-| 600    | code invalid                 |
-| 601    | body empty                   |
+| 错误码 | 错误内容                      | 含义 |
+| ------ | ---------------------------- | ---------------------------- |
+| 200    | ok                           | 成功 |
+| 400    | request header param invalid | 请求JSON第一层参数错误 |
+| 400    | request data param invalid   | 请求JSON中data字段参数错误 |
+| 401    | token invalid                | token无效 |
+| 429    | rate limit                   | 请求频率限制 |
+| 600    | code invalid                 | 请求code产品无效 |
+| 601    | body empty                   | 请求消息体数据为空 |
+| 604    | code unauthorized            | token没有请求产品的权限 |
+| 605    | too many requests            | token请求的产品数量过多 |

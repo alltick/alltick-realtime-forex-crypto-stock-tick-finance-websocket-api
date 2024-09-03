@@ -2,12 +2,14 @@
 
 # Error Code Description
 
-| Error Code | Meaning                       |
-| ---------- | ----------------------------- |
-| 200        | OK                            |
-| 400        | Invalid request header param  |
-| 400        | Invalid request data param    |
-| 401        | Invalid token                 |
-| 429        | Rate limit exceeded           |
-| 600        | Invalid code                  |
-| 601        | Empty body                    |
+| Error Code | Error Msg                    | Meaning |
+| ---------- | ---------------------------- | --------------------------------------------------------- |
+| 200        | ok                           | Success |
+| 400        | request header param invalid | JSON request first layer parameter error |
+| 400        | request data param invalid   | Incorrect data field parameter in request JSON |
+| 401        | token invalid                | Token is invalid |
+| 429        | rate limit                   | Request frequency limit |
+| 600        | code invalid                 | Request code product is invalid |
+| 601        | body empty                   | The request message body data is empty |
+| 604        | code unauthorized            | Token does not have permission to request products|
+| 605        | too many requests            | The number of products requested by the token is too many |
