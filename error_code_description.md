@@ -8,6 +8,7 @@
 | 400        | request header param invalid | JSON request first layer parameter error |
 | 400        | request data param invalid   | Incorrect data field parameter in request JSON |
 | 401        | token invalid                | Token is invalid |
+| 402        | query invalid                | Request query param error |
 | 429        | rate limit                   | Request frequency limit |
 | 600        | code invalid                 | Request code product is invalid |
 | 601        | body empty                   | The request message body data is empty |
