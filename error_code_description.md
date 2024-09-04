@@ -13,4 +13,4 @@
 | 600        | code invalid                 | Request code product is invalid |
 | 601        | body empty                   | The request message body data is empty |
 | 604        | code unauthorized            | Token does not have permission to request products|
-| 605        | too many requests            | The number of products requested by the token is too many |
+| 605        | too many requests            | Request frequency limit |

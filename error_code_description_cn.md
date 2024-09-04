@@ -13,4 +13,4 @@
 | 600    | code invalid                 | 请求code产品无效 |
 | 601    | body empty                   | 请求消息体数据为空 |
 | 604    | code unauthorized            | token没有请求产品的权限 |
-| 605    | too many requests            | token请求的产品数量过多 |
+| 605    | too many requests            | 请求频率限制 |
