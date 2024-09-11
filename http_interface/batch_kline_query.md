@@ -46,7 +46,7 @@ Batch query K-line functionality. Due to the large number of batch query paramet
 | »»» code        | body     | string   | Yes      | Please refer to the code list and select the code you want to query |
 | »»» kline_type  | body     | integer  | Yes      | K-line type, 1 for 1-minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K |
 | »»» kline_timestamp_end | body | integer | Yes    | From which timestamp to query backward, 0 means from the current time, only effective for non-stock type codes |
-| »»» query_kline_num | body     | integer  | Yes      | Number of K-lines to query, up to 1000                  |
+| »»» query_kline_num | body     | integer  | Yes      | Number of K-lines to query, up to 1, Fixed pass 1     |
 | »»» adjust_type | body     | integer  | Yes      | Adjustment type, only effective for stock type codes, e.g., 0: ex-right, 1: pre-adjustment |
 
 

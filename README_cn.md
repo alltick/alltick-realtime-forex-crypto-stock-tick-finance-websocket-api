@@ -79,7 +79,7 @@ Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 - [获取最新成交报价查询](./http_interface/latest_transaction_price_query_cn.md)
 - [最新盘口报价查询](./http_interface/latest_order_book_price_query_cn.md)
 - [K线查询](./http_interface/kline_query_cn.md)
-- [批量K线查询](./http_interface/batch_kline_query_cn.md)
+- [批量产品查询](./http_interface/batch_kline_query_cn.md)
 
 ### websocket接口
 - [行情API地址说明](./websocket_interface/api_address_description_cn.md)
