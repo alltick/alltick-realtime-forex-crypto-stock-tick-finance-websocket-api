@@ -4,11 +4,12 @@
 
 ## HTTP Interface Restriction 1 - IP Class Restriction (The limitations of the free trial package written here will be adjusted according to the package after payment.)
 
-Multiple requests from the same IP are subject to specific limits determined by the interface, with no mutual interference.
+Multiple requests from the same IP are subject to specific limits determined by the interface.
 
 - /kline: Only 1 request is allowed every 10 seconds.
 - /depth-tick: Only 1 request is allowed per second.
 - /trade-tick: Only 1 request is allowed per second.
+- /batch-kline: Only 5 request is allowed per second.
 
 ### Example:
 - IP A makes a request to the /kline interface to query K-line data at 14:03:01, and also makes a request to the /trade-tick interface to query trade tick data once within the same minute. The backend service provides normal responses for both requests.
