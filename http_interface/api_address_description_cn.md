@@ -12,6 +12,10 @@
 单产品请求K线示例：<br/>
 https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=你的token&query=queryData<br/>
 
+批产品请求K线示例：<br/>
+https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline?token=你的token<br/>
+注意：批产品请求K线时，请求参数放在body中
+
 请求最新成交价示例：<br/>
 https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick?token=你的token&query=queryData<br/>
 
@@ -31,6 +35,10 @@ https://quote.tradeswitcher.com/quote-stock-b-api/depth-tick?token=你的token&q
 
 单产品请求K线示例：<br/>
 https://quote.tradeswitcher.com/quote-b-api/kline?token=你的token&query=queryData<br/>
+
+批产品请求K线示例：<br/>
+https://quote.tradeswitcher.com/quote-b-api/batch-kline?token=你的token<br/>
+注意：批产品请求K线时，请求参数放在body中
 
 请求最新成交价示例：<br/>
 https://quote.tradeswitcher.com/quote-b-api/trade-tick?token=你的token&query=queryData<br/>
