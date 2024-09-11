@@ -1,12 +1,12 @@
 > [English](./batch_kline_query.md) | [中文](./batch_kline_query_cn.md)
 
-## GET Batch Code Query
+## GET Batch Code Latest K-Line Query
 
 GET /batch-kline
 
 > Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
-Batch query code functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
+Batch Code Latest K-Line Query functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
 
 > Body Request Parameters
 
