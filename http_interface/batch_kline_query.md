@@ -1,12 +1,12 @@
 > [English](./batch_kline_query.md) | [中文](./batch_kline_query_cn.md)
 
-## GET Batch K-Line Query
+## GET Batch Code Query
 
 GET /batch-kline
 
 > Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
-Batch query K-line functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
+Batch query code functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
 
 > Body Request Parameters
 
@@ -19,14 +19,14 @@ Batch query K-line functionality. Due to the large number of batch query paramet
         "code": "700.HK",
         "kline_type": 1,
         "kline_timestamp_end": 0,
-        "query_kline_num": 2,
+        "query_kline_num": 1,
         "adjust_type": 0
       },
       {
         "code": "GOOGL.US",
         "kline_type": 1,
         "kline_timestamp_end": 0,
-        "query_kline_num": 2,
+        "query_kline_num": 1,
         "adjust_type": 0
       }
     ]
@@ -73,15 +73,6 @@ Batch query K-line functionality. Due to the large number of batch query paramet
             "low_price": "136.407",
             "volume": "0",
             "turnover": "0"
-          },
-          {
-            "timestamp": "1677829260",
-            "open_price": "136.412",
-            "close_price": "136.401",
-            "high_price": "136.415",
-            "low_price": "136.397",
-            "volume": "0",
-            "turnover": "0"
           }
         ]
       },
@@ -95,15 +86,6 @@ Batch query K-line functionality. Due to the large number of batch query paramet
             "close_price": "136.412",
             "high_price": "136.422",
             "low_price": "136.407",
-            "volume": "0",
-            "turnover": "0"
-          },
-          {
-            "timestamp": "1677829260",
-            "open_price": "136.412",
-            "close_price": "136.401",
-            "high_price": "136.415",
-            "low_price": "136.397",
             "volume": "0",
             "turnover": "0"
           }

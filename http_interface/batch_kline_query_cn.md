@@ -1,12 +1,12 @@
 > [English](./batch_kline_query.md) | [中文](./batch_kline_query_cn.md)
 
-## GET 批量K线查询
+## GET 批量产品查询
 
 GET /batch-kline
 
 > 完整的URL请参见[API地址说明](./api_address_description_cn.md)
 
-批量查询K线功能，由于批量查询参数比较多，放入body中，url参数中只保留token字段参数。
+批量查询产品功能，由于批量查询参数比较多，放入body中，url参数中只保留token字段参数。
 
 > Body 请求参数
 
@@ -19,14 +19,14 @@ GET /batch-kline
         "code": "700.HK",
         "kline_type": 1,
         "kline_timestamp_end": 0,
-        "query_kline_num": 2,
+        "query_kline_num": 1,
         "adjust_type": 0
       },
       {
         "code": "GOOGL.US",
         "kline_type": 1,
         "kline_timestamp_end": 0,
-        "query_kline_num": 2,
+        "query_kline_num": 1,
         "adjust_type": 0
       }
     ]
@@ -72,15 +72,6 @@ GET /batch-kline
             "low_price": "136.407",
             "volume": "0",
             "turnover": "0"
-          },
-          {
-            "timestamp": "1677829260",
-            "open_price": "136.412",
-            "close_price": "136.401",
-            "high_price": "136.415",
-            "low_price": "136.397",
-            "volume": "0",
-            "turnover": "0"
           }
         ]
       },
@@ -94,15 +85,6 @@ GET /batch-kline
             "close_price": "136.412",
             "high_price": "136.422",
             "low_price": "136.407",
-            "volume": "0",
-            "turnover": "0"
-          },
-          {
-            "timestamp": "1677829260",
-            "open_price": "136.412",
-            "close_price": "136.401",
-            "high_price": "136.415",
-            "low_price": "136.397",
             "volume": "0",
             "turnover": "0"
           }
