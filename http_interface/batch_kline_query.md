@@ -6,7 +6,9 @@ GET /batch-kline
 
 > Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
-Batch Code Latest K-Line Query functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
+### Batch Code Latest K-Line Query functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
+
+<u></u>[Get the reference article for the method of using body to pass parameters in a request](https://blog.csdn.net/fz250052/article/details/103578855)
 
 > Body Request Parameters
 
