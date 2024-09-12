@@ -7,7 +7,7 @@ GET /batch-kline
 > 完整的URL请参见[API地址说明](./api_address_description_cn.md)
 
 ### 批量查询产品最新K线功能，由于批量查询参数比较多，放入body中，url参数中只保留token字段参数。
-<u></u>****[Get请求使用body传参的方法参考文章](https://blog.csdn.net/fz250052/article/details/103578855)</u>
+<u></u>[Get请求使用body传参的方法参考文章](https://blog.csdn.net/fz250052/article/details/103578855)
 
 > Body 请求参数
 
