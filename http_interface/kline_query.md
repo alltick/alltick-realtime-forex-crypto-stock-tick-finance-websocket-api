@@ -35,7 +35,7 @@ Encode the following JSON using URL encoding and assign it to the 'query' query 
 | trace                | string  | Yes      | Trace code used for logging purposes, ensure uniqueness for each request |
 | data                 | object  | Yes      |                                                       |
 | » code               | string  | Yes      | Refer to the code list and select the code you want to query |
-| » kline_type         | integer | Yes      | Type of K-line: 1 minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K |
+| » kline_type         | integer | Yes      | Type of K-line: 1 minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K (Note: Stocks do not support 2-hour K and 4-hour K)|
 | » kline_timestamp_end| integer | Yes      | Indicates the time point to query backward from. Set to 0 for current time. Default is 0 |
 | » query_kline_num    | integer | Yes      | Number of K-lines to query, maximum of 1000 |
 | » adjust_type        | integer | Yes      | Adjustment type, effective only for stock codes, e.g., 0: ex-rights, 1: pre-adjustment |
@@ -92,7 +92,7 @@ Status Code **200**
 | » trace         | string    | true     |             |              |                                                             |
 | » data          | object    | true     |             |              |                                                             |
 | »» code         | string    | true     |             |              | Code                                                        |
-| »» kline_type   | integer   | true     |             |              | Type of K-line: 1 minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K |
+| »» kline_type   | integer   | true     |             |              | Type of K-line: 1 minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K (Note: Stocks do not support 2-hour K and 4-hour K)|
 | »» kline_list   | [object]  | true     |             |              |                                                             |
 | »»» timestamp   | string    | true     |             |              | Timestamp of the K-line                                     |
 | »»» open_price  | string    | true     |             |              | Opening price of the K-line                                 |

@@ -46,7 +46,7 @@ GET /batch-kline
 | » data          | body     | object   | Yes      |                                                          |
 | »» data_list    | body     | [object] | Yes      |                                                          |
 | »»» code        | body     | string   | Yes      | Please refer to the code list and select the code you want to query |
-| »»» kline_type  | body     | integer  | Yes      | K-line type, 1 for 1-minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K |
+| »»» kline_type  | body     | integer  | Yes      | K-line type, 1 for 1-minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K (Note: Stocks do not support 2-hour K and 4-hour K)|
 | »»» kline_timestamp_end | body | integer | Yes    | From which timestamp to query backward, 0 means from the current time, only effective for non-stock type codes |
 | »»» query_kline_num | body     | integer  | Yes      | Number of K-lines to query, up to 1, Fixed pass 1     |
 | »»» adjust_type | body     | integer  | Yes      | Adjustment type, only effective for stock type codes, e.g., 0: ex-right, 1: pre-adjustment |
@@ -116,7 +116,7 @@ Status Code **200**
 | » data         | object   | true     |             |              |                  |
 | »» kline_list  | [array]  | true     |             |              |                  |
 | »»» code       | string   | true     |             |              | Product Code     |
-| »»» kline_type | integer  | true     |             |              | K-line type, where 1 represents 1-minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hour K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, and 10 for monthly K |
+| »»» kline_type | integer  | true     |             |              | K-line type, where 1 represents 1-minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hour K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, and 10 for monthly K (Note: Stocks do not support 2-hour K and 4-hour K)|
 | »»» kline_data | [array]  | true     |             |              |                  |
 | »»»» timestamp | string   | true     |             |              | Timestamp of the K-line  |
 | »»»» open_price| string   | true     |             |              | Opening price of the K-line |
