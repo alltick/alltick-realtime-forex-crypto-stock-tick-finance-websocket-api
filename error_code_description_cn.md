@@ -12,5 +12,6 @@
 | 429    | rate limit                   | 请求频率限制 |
 | 600    | code invalid                 | 请求code产品无效 |
 | 601    | body empty                   | 请求消息体数据为空 |
+| 603    | token level not enough       | 请求产品个数或者K线根数大于token权限 |
 | 604    | code unauthorized            | token没有请求产品的权限 |
 | 605    | too many requests            | 请求频率限制 |

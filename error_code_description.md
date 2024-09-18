@@ -12,5 +12,6 @@
 | 429        | rate limit                   | Request frequency limit |
 | 600        | code invalid                 | Request code product is invalid |
 | 601        | body empty                   | The request message body data is empty |
+| 603        | token level not enough       | The number of requested products or the number of K lines is greater than the token permission |
 | 604        | code unauthorized            | Token does not have permission to request products|
 | 605        | too many requests            | Request frequency limit |
