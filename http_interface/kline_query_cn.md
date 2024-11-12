@@ -38,7 +38,7 @@ GET /kline
 | » kline_type          | integer | 是   | k线类型，1分钟K，2为5分钟K，3为15分钟K，4为30分钟K，5为小时K，6为2小时K，7为4小时K，8为日K，9为周K，10为月K （注：股票不支持2小时K、4小时K）|
 | » kline_timestamp_end | integer | 是   | 从那个时间点往前查，为0表示从当前时间，非股票类的code才有效 |
 | » query_kline_num     | integer | 是   | 查询多少根K线，最多1000根 |
-| » adjust_type     | integer | 是   | 复权类型,对于股票类的code才有效，例如：0:除权,1:前复权 |
+| » adjust_type     | integer | 是   | 复权类型,对于股票类的code才有效，例如：0:除权,1:前复权，目前仅支持0 |
 
 > 返回示例
 
