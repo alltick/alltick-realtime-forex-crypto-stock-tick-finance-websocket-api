@@ -39,6 +39,7 @@
 - [Get Latest Order Book Quote Query](./http_interface/latest_order_book_price_query.md)
 - [K-Line Query](./http_interface/kline_query.md)
 - [Batch Code Latest K-Line Query](./http_interface/batch_kline_query.md)
+- [Product Information Query](./http_interface/static_query.md)
 
 #### WebSocket Interface
 
