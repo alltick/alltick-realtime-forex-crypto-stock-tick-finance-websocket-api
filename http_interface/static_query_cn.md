@@ -4,7 +4,7 @@
 
 GET /static_info
 > 完整的URL请参见[API地址说明](./api_address_description_cn.md)
-> 目前只支持股票信息查询
+目前只支持股票信息查询
 
 ### 请求参数
 
