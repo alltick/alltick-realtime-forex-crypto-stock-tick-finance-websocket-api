@@ -1,4 +1,4 @@
-> [English](./latest_order_book_price_query.md) | [中文](./latest_order_book_price_query_cn.md)
+> [English](./static_query.md) | [中文](./static_query_cn.md)
 
 ## GET Product information query
 
