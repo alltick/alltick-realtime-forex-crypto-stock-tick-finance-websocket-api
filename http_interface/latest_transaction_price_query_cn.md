@@ -1,6 +1,6 @@
 > [English](./latest_transaction_price_query.md) | [中文](./latest_transaction_price_query_cn.md)
 
-## GET 最新成交报价查询
+## GET 最新成交价批量查询
 
 GET /trade-tick
 
