@@ -23,11 +23,11 @@
 - [产品code列表-外汇](./product_code_list_forex_cn.md)
 ### 第6步：请求具体接口获取你想要的数据
 #### http接口
-- [获取最新成交报价查询](./http_interface/latest_transaction_price_query_cn.md)
-- [最新盘口报价查询](./http_interface/latest_order_book_price_query_cn.md)
-- [K线查询](./http_interface/kline_query_cn.md)
-- [批量查询产品最新K线](./http_interface/batch_kline_query_cn.md)
-- [产品信息查询](./http_interface/static_query_cn.md)
+- [批量获取最新成交价](./http_interface/latest_transaction_price_query_cn.md)
+- [获取最新盘口(Order Book)](./http_interface/latest_order_book_price_query_cn.md)
+- [获取历史K线](./http_interface/kline_query_cn.md)
+- [批量获取产品最新K线](./http_interface/batch_kline_query_cn.md)
+- [获取股票产品基础信息](./http_interface/static_query_cn.md)
 #### websocket接口
 - [心跳](./websocket_interface/heartbeat_cn.md)
 - [成交报价订阅](./websocket_interface/realtime_transaction_quote_subscription_cn.md)
