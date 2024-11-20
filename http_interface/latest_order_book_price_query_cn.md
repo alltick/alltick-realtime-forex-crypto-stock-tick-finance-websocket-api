@@ -1,6 +1,6 @@
 > [English](./latest_order_book_price_query.md) | [中文](./latest_order_book_price_query_cn.md)
 
-## GET 最新盘口报价查询
+## GET 最新盘口(Order Book)查询
 
 GET /depth-tick
 > 完整的URL请参见[API地址说明](./api_address_description_cn.md)
