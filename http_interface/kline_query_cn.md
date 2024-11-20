@@ -27,11 +27,11 @@ GET /kline
 - 完整URL: https://quote.tradeswitcher.com/quote-b-api/kline
 
 ### 请求示例
-#### 1、美股、港股、A股、大盘数据：
+#### 1、美股、港股、A股、大盘数据请求示例：
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
 <br />https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=您的token&query=queryData
 
-#### 2、外汇、贵金属、加密货币、商品接口地址：
+#### 2、外汇、贵金属、加密货币、商品请求示例：
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
 <br />https://quote.tradeswitcher.com/quote-b-api/kline?token=您的token&query=queryData
 
