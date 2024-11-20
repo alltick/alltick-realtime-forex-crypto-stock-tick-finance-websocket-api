@@ -1,9 +1,39 @@
 > [English](./kline_query.md) | [中文](./kline_query_cn.md)
 
-## GET K线查询
+## GET 单产品历史K线查询
 
 GET /kline
 > 完整的URL请参见[API地址说明](./api_address_description_cn.md)
+
+### 请求频率
+
+| 计划     | 单独请求              | 同时请求多个http接口                                         |
+| :------- | :-------------------- | :----------------------------------------------------------- |
+| 免费     | 每10秒，只能1次请求   | 1、同1秒只能请求1个接口<br />2、多个接口请求时，需注意/batch-kline接口需间隔10秒<br /> 3、所有接口相加，1分钟最大请求10次(6秒1次) |
+| 基础     | 每1秒，只能1次请求    | 1、同1秒只能请求1个接口<br />2、多个接口请求时，需注意/batch-kline接口需间隔3秒<br /> 3、所有接口相加，1分钟最大请求60次(1秒1次) |
+| 高级     | 每1秒，最大可10次请求 | 1、所以接口相加，每1秒可请求10次<br />2、多个接口请求时，需注意/batch-kline接口需间隔2秒<br /> 3、所有接口相加，1分钟最大请求600次(1秒10次) |
+| 专业     | 每1秒，最大可20次请求 | 1、所以接口相加，每1秒可请求20次<br />2、多个接口请求时，需注意/batch-kline接口需间隔1秒<br /> 3、所有接口相加，1分钟最大请求1200次(1秒20次) |
+| 全部港股 | 每1秒，最大可20次请求 | 1、所以接口相加，每1秒可请求20次<br />2、多个接口请求时，需注意/batch-kline接口需间隔1秒<br /> 3、所有接口相加，1分钟最大请求1200次(1秒20次) |
+| 全部A股  | 每1秒，最大可20次请求 | 1、所以接口相加，每1秒可请求20次<br />2、多个接口请求时，需注意/batch-kline接口需间隔1秒<br /> 3、所有接口相加，1分钟最大请求1200次(1秒20次) |
+| 全部美股 | 每1秒，最大可20次请求 | 1、所以接口相加，每1秒可请求20次<br />2、多个接口请求时，需注意/batch-kline接口需间隔1秒<br /> 3、所有接口相加，1分钟最大请求1200次(1秒20次) |
+
+### 接口地址
+#### 1、美股、港股、A股、大盘数据接口地址：
+- 基本路径: /quote-stock-b-api/kline
+- 完整URL: https://quote.tradeswitcher.com/quote-stock-b-api/kline
+  
+#### 2、外汇、贵金属、加密货币、商品接口地址：
+- 基本路径: /quote-b-api/kline
+- 完整URL: https://quote.tradeswitcher.com/quote-b-api/kline
+
+### 请求示例
+#### 1、美股、港股、A股、大盘数据：
+在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
+<br />https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=您的token&query=queryData
+
+#### 2、外汇、贵金属、加密货币、商品接口地址：
+在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
+<br />https://quote.tradeswitcher.com/quote-b-api/kline?token=您的token&query=queryData
 
 ### 请求参数
 
@@ -35,7 +65,7 @@ GET /kline
 | trace                | string  | 是   | 追踪码，用来查询日志使用，请保证每次请求时唯一 |
 | data                 | object  | 是   |                                                          |
 | » code                | string  | 是   | 请查看code列表，选择你要查询的code |
-| » kline_type          | integer | 是   | k线类型，1分钟K，2为5分钟K，3为15分钟K，4为30分钟K，5为小时K，6为2小时K，7为4小时K，8为日K，9为周K，10为月K （注：股票不支持2小时K、4小时K）|
+| » kline_type          | integer | 是   | k线类型，1是分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）|
 | » kline_timestamp_end | integer | 是   | 从那个时间点往前查，为0表示从当前时间，非股票类的code才有效 |
 | » query_kline_num     | integer | 是   | 查询多少根K线，最多1000根 |
 | » adjust_type     | integer | 是   | 复权类型,对于股票类的code才有效，例如：0:除权,1:前复权，目前仅支持0 |
@@ -93,7 +123,7 @@ GET /kline
 | » trace         | string   | true |  |        |                                                          |
 | » data          | object   | true |  |        |                                                          |
 | »» code         | string   | true |  |        | 代码                                                         |
-| »» kline_type   | integer  | true |  |        | k线类型，1分钟K，2为5分钟K，3为15分钟K，4为30分钟K，5为小时K，6为2小时K，7为4小时K，8为日K，9为周K，10为月K （注：股票不支持2小时K、4小时K）|
+| »» kline_type   | integer  | true |  |        | k线类型，1是分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）|
 | »» kline_list   | [object] | true |  |        |                                                          |
 | »»» timestamp   | string   | true |  |        | 该K线时间戳                                                  |
 | »»» open_price  | string   | true |  |        | 该K线开盘价                                                  |
