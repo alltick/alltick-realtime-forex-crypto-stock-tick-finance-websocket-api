@@ -1,6 +1,6 @@
 > [English](./static_query.md) | [中文](./static_query_cn.md)
 
-## GET 产品信息查询
+## GET 股票产品基础信息批量查询
 
 GET /static_info
 > 完整的URL请参见[API地址说明](./api_address_description_cn.md)
