@@ -23,8 +23,8 @@ POST /batch-kline
 - 基本路径: /quote-stock-b-api/batch-kline
 - 完整URL: https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline
 #### 2、外汇、贵金属、加密货币、商品接口地址：
-- 基本路径: /quote-b-api/kline
-- 完整URL: https://quote.tradeswitcher.com/quote-b-api/kline
+- 基本路径: /quote-b-api/batch-kline
+- 完整URL: https://quote.tradeswitcher.com/quote-b-api/batch-kline
 
 ### 请求示例
 #### 1、美股、港股、A股、大盘数据请求示例：
