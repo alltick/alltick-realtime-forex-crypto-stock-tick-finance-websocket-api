@@ -14,4 +14,5 @@
 | 601    | body empty                   | 请求消息体数据为空 |
 | 603    | token level not enough       | 请求产品个数或者K线根数大于token权限 |
 | 604    | code unauthorized            | token没有请求产品的权限 |
-| 605    | too many requests            | 请求频率限制 |
+| 605    | too many requests            | 一般是Http接口请求频率限制 |
+| 606    | too many requests and connection will be closed            | 一般是Websocket接口请求频率限制 |
