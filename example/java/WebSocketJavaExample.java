@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import javax.websocket.*;
+import java.util.Timer;
+import java.util.TimerTask;
 
 // Special Note:
 // GitHub: https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api
@@ -16,11 +18,13 @@ import javax.websocket.*;
 public class WebSocketJavaExample {
 
     private Session session;
+    private Timer timer;
 
     @OnOpen
     public void onOpen(Session session) {
         System.out.println("Connected to server");
         this.session = session;
+        startHeartbeat();
     }
 
     @OnMessage
@@ -31,6 +35,7 @@ public class WebSocketJavaExample {
     @OnClose
     public void onClose(Session session, CloseReason closeReason) {
         System.out.println("Disconnected from server");
+        stopHeartbeat();
     }
 
     @OnError
@@ -40,6 +45,35 @@ public class WebSocketJavaExample {
 
     public void sendMessage(String message) throws Exception {
         this.session.getBasicRemote().sendText(message);
+    }
+
+    private void startHeartbeat() {
+        this.timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                try {
+                    if (session.isOpen()) {
+                        String heartbeat = "{\"cmd_id\":22000,\"seq_id\":123,\"trace\":\"asdfsdfa\",\"data\":{}}";
+                        session.getBasicRemote().sendText(heartbeat);
+                        System.out.println("Sent heartbeat");
+                    } else {
+                        stopHeartbeat();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    stopHeartbeat();
+                }
+            }
+        }, 0, 10000); // 每 10 秒发送一次心跳
+    }
+
+
+    private void stopHeartbeat() {
+        if (this.timer!= null) {
+            timer.cancel();
+            this.timer = null;
+        }
     }
 
     public static void main(String[] args) throws Exception, URISyntaxException, DeploymentException, IOException, IllegalArgumentException, SecurityException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {

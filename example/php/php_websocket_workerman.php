@@ -28,6 +28,18 @@ $worker->onWorkerStart = function()
         echo "TCP connected\n";
         // Send subscription request
         $connection->send('{"cmd_id":22002,"seq_id":123,"trace":"3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806","data":{"symbol_list":[{"code":"700.HK","depth_level":5},{"code":"AAPL.US","depth_level":5}]}}');
+
+        // 开始定时发送心跳
+        $timerId = Timer::add(10, function () use ($connection) {
+            $heartbeat = json_encode([
+                "cmd_id" => 22000,
+                "seq_id" => 123,
+                "trace" => "asdfsdfa",
+                "data" => []
+            ]);
+            $connection->send($heartbeat);
+            echo "Sent heartbeat: ". $heartbeat. "\n";
+        });
     };
     // After the websocket handshake is completed
     $ws_connection->onWebSocketConnect = function(AsyncTcpConnection $con, $response) {
@@ -44,8 +56,12 @@ $worker->onWorkerStart = function()
     // When the connection to the remote websocket server is closed
     $ws_connection->onClose = function($connection){
         echo "Connection closed and trying to reconnect\n";
+        if ($timerId!== null) {
+            Timer::del($timerId);
+        }
         // If the connection is closed, reconnect after 1 second
         $connection->reConnect(1);
+
     };
     // After setting up all the callbacks above, initiate the connection
     $ws_connection->connect();

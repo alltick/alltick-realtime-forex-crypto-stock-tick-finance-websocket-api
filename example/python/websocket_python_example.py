@@ -1,4 +1,6 @@
 import json
+import time
+import threading
 import websocket    # pip install websocket-client
 
 '''
@@ -98,7 +100,22 @@ class Feed(object):
             on_error=self.on_error,
             on_close=self.on_close,
         )
+        threading.Thread(target=self.thread_heartbeat).start()
         self.ws.run_forever()
+    
+    def thread_heartbeat(self):
+        while True:
+            time.sleep(10)  # 每 10 秒发送一次心跳
+            if self.ws.sock and self.ws.sock.connected:
+                heartbeat = {
+                    "cmd_id":22000,
+                    "seq_id":123,
+                    "trace":"asdfsdfa",
+                    "data":{
+                    }
+                }
+                self.ws.send(heartbeat)  # 发送心跳消息
+                print("Sent heartbeat")
 
 
 if __name__ == "__main__":
