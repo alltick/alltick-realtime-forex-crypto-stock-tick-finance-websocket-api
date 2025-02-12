@@ -6,6 +6,51 @@ POST /batch-kline
 
 > Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
+### Interface Description
+
+This interface can query multiple products in batches at one time, and can query multiple k-line types in batches at one time (k-line types refer to 1 minute, 15 minutes, 30 minutes, etc.), but can only query the latest 2 k-lines in batches.
+
+### Request Frequency
+
+| Plan          | Individual request                                           | Request multiple HTTP interfaces                             |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Free          | 1、1 request allowed every 10 seconds.<br />2、Each query can batch retrieve 10 items, where 10 equals the product count times the candlestick type. | 1、One request per second.<br />2、/batch-kline needs 10-second intervals.<br />3、Total of 10 requests per minute (every 6 seconds).<br />4、Max 14400 daily requests; excess resets at midnight. |
+| Basic         | 1、1 request every 3 seconds.<br />2、Each query can batch retrieve 100 items, where 100 equals the product count times the candlestick type. | 1、One request per second.<br />2、/batch-kline: 1 request every 3 seconds.<br />3、Total of 60 requests per minute (1 request per second).<br />4、Max 86400 daily requests; excess resets at midnight. |
+| Premium       | 1、1 request every 2 seconds.<br />2、Each query can batch retrieve 200 items, where 200 equals the product count times the candlestick type. | 1、Combined interfaces: 10 requests/second.<br />2、/batch-kline: 1 request/2 seconds.<br />3、Total: 600 requests/minute (10/second).<br />4、Daily limit: 864,000 requests; reset daily at midnight if exceeded. |
+| Professional  | 1、1 request per second.<br />2、Each query can batch retrieve 500 items, where 500 equals the product count times the candlestick type. | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+| All HK Stocks | 1、1 request per second.<br />2、Each query can batch retrieve 500 items, where 500 equals the product count times the candlestick type. | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+| All CN Stocks | 1、1 request per second.<br />2、Each query can batch retrieve 500 items, where 500 equals the product count times the candlestick type. | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+
+## API Endpoints
+
+1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
+
+   - **Base Path:** `/quote-stock-b-api/batch-kline`
+
+   - **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline`
+
+     
+
+2. **Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
+
+   - **Base Path:** `/quote-b-api/batch-kline`
+
+   - **Full URL:** `https://quote.tradeswitcher.com/quote-b-api/batch-kline`
+
+     
+
+## Request Examples
+
+1. **Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:** <br />The batch query function for retrieving the latest K-line data requires many parameters, which should be included in the request body. Only the `token` parameter should be included in the URL. <br />When sending the query request, you must include the method name and token information. An example request is as follows:
+
+   https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline?token=your_token
+ 
+
+2. **Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:** <br />The batch query function for retrieving the latest K-line data requires many parameters, which should be included in the request body. Only the `token` parameter should be included in the URL. <br />When sending the query request, you must include the method name and token information. An example request is as follows:
+
+   https://quote.tradeswitcher.com/quote-b-api/batch-kline?token=your_token
+
+
 ### Batch Code Latest K-Line Query functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
 
 > Body Request Parameters
