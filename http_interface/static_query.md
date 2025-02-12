@@ -4,7 +4,36 @@
 
 GET /static_info
 > Please refer to the complete URL in [API Address Description](./api_address_description.md)
+
+### Interface description
+
 Currently only supports stock information query
+
+### Request Frequency
+
+| Plan          | Individual request                   | Request multiple HTTP interfaces                                           |
+| ------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| Free          | Once every 10 seconds, only 1 request can be made | 1、One request per second.<br />2、/batch-kline needs 10-second intervals.<br />3、Total of 10 requests per minute (every 6 seconds).<br />4、Max 14400 daily requests; excess resets at midnight. |
+| Basic         | Only 1 request per second                         | 1、One request per second.<br />2、/batch-kline: 1 request every 3 seconds.<br />3、Total of 60 requests per minute (1 request per second).<br />4、Max 86400 daily requests; excess resets at midnight. |
+| Premium       | Up to 10 requests per second                      | 1、Combined interfaces: 10 requests/second.<br />2、/batch-kline: 1 request/2 seconds.<br />3、Total: 600 requests/minute (10/second).<br />4、Daily limit: 864,000 requests; reset daily at midnight if exceeded. |
+| Professional  | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+| All HK Stocks | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+| All CN Stocks | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+
+
+
+### **Interface Address**
+
+- **Base Path:** `/quote-stock-b-api/static_info`
+- **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/static_info`
+
+
+
+### **Request Example**
+
+When sending a query request, it must include the method name and token information. <br />An example of a request is as follows:
+<br />https://quote.tradeswitcher.com/quote-stock-b-api/static_info?token=您的token&query=queryData
+
 
 ### Request Parameters
 
