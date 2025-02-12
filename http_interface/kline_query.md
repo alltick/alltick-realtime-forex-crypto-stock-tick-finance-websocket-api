@@ -5,6 +5,47 @@
 GET /kline
 > Please refer to the complete URL in [API Address Description](./api_address_description.md)
 
+### Interface Description
+
+This interface can be used to query historical K-lines, but only one product can be queried at a time. It is recommended to cache the queried historical K-lines locally.
+
+### Request Frequency
+
+| Text          | Text                                              | Text                                                         |
+| ------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| Free          | Once every 10 seconds, only 1 request can be made | 1、One request per second.<br />2、/batch-kline needs 10-second intervals.<br />3、Total of 10 requests per minute (every 6 seconds).<br />4、Max 14400 daily requests; excess resets at midnight. |
+| Basic         | Only 1 request per second                         | 1、One request per second.<br />2、/batch-kline: 1 request every 3 seconds.<br />3、Total of 60 requests per minute (1 request per second).<br />4、Max 86400 daily requests; excess resets at midnight. |
+| Premium       | Up to 10 requests per second                      | 1、Combined interfaces: 10 requests/second.<br />2、/batch-kline: 1 request/2 seconds.<br />3、Total: 600 requests/minute (10/second).<br />4、Daily limit: 864,000 requests; reset daily at midnight if exceeded. |
+| Professional  | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+| All HK Stocks | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+| All CN Stocks | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
+
+
+### API Endpoints
+
+1.**US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
+
+- **Base Path:** `/quote-stock-b-api/kline`
+- **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/kline`
+
+2.**Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
+
+- **Base Path:** `/quote-b-api/kline`
+
+- **Full URL:** `https://quote.tradeswitcher.com/quote-b-api/kline`
+
+
+### Request Examples
+
+1.**Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:**
+
+When sending a query request, you must include the method name and token information. An example request is as follows: `https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=your_token&query=queryData`
+
+2.**Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:**
+
+When sending a query request, you must include the method name and token information. An example request is as follows: `https://quote.tradeswitcher.com/quote-b-api/kline?token=your_token&query=queryData`
+
+
 ### Request Parameters
 
 | Name       | Position | Type   | Required | Description                                           |
