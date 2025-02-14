@@ -1,6 +1,6 @@
 > [English](./batch_kline_query.md) | [中文](./batch_kline_query_cn.md)
 
-## POST Batch Code Latest K-Line Query
+## POST Query the latest 2 K lines of products in batches
 
 POST /batch-kline
 
