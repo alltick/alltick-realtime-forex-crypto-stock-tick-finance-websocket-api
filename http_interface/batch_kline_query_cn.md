@@ -1,6 +1,6 @@
 > [English](./batch_kline_query.md) | [中文](./batch_kline_query_cn.md)
 
-## POST 批量查询产品最新K线
+## POST 批量查询产品最新2根K线
 
 POST /batch-kline
 
