@@ -25,14 +25,14 @@ Currently only supports stock information query
 ### **Interface Address**
 
 - **Base Path:** `/quote-stock-b-api/static_info`
-- **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/static_info`
+- **Full URL:** `https://quote.alltick.io/quote-stock-b-api/static_info`
 
 
 
 ### **Request Example**
 
 When sending a query request, it must include the method name and token information. <br />An example of a request is as follows:
-<br />https://quote.tradeswitcher.com/quote-stock-b-api/static_info?token=您的token&query=queryData
+<br />https://quote.alltick.io/quote-stock-b-api/static_info?token=您的token&query=queryData
 
 
 ### Request Parameters

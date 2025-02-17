@@ -27,7 +27,7 @@ This interface can query multiple products in batches at one time, and can query
 
    - **Base Path:** `/quote-stock-b-api/batch-kline`
 
-   - **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline`
+   - **Full URL:** `https://quote.alltick.io/quote-stock-b-api/batch-kline`
 
      
 
@@ -35,7 +35,7 @@ This interface can query multiple products in batches at one time, and can query
 
    - **Base Path:** `/quote-b-api/batch-kline`
 
-   - **Full URL:** `https://quote.tradeswitcher.com/quote-b-api/batch-kline`
+   - **Full URL:** `https://quote.alltick.io/quote-b-api/batch-kline`
 
      
 
@@ -43,12 +43,12 @@ This interface can query multiple products in batches at one time, and can query
 
 1. **Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:** <br />The batch query function for retrieving the latest K-line data requires many parameters, which should be included in the request body. Only the `token` parameter should be included in the URL. <br />When sending the query request, you must include the method name and token information. An example request is as follows:
 
-   https://quote.tradeswitcher.com/quote-stock-b-api/batch-kline?token=your_token
+   https://quote.alltick.io/quote-stock-b-api/batch-kline?token=your_token
  
 
 2. **Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:** <br />The batch query function for retrieving the latest K-line data requires many parameters, which should be included in the request body. Only the `token` parameter should be included in the URL. <br />When sending the query request, you must include the method name and token information. An example request is as follows:
 
-   https://quote.tradeswitcher.com/quote-b-api/batch-kline?token=your_token
+   https://quote.alltick.io/quote-b-api/batch-kline?token=your_token
 
 
 ### Batch Code Latest K-Line Query functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.

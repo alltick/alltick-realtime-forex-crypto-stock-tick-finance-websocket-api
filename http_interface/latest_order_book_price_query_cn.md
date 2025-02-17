@@ -28,18 +28,18 @@ GET /depth-tick
 ### 接口地址
 #### 1、美股、港股、A股、大盘数据接口地址：
 - 基本路径: /quote-stock-b-api/depth-tick
-- 完整URL: https://quote.tradeswitcher.com/quote-stock-b-api/depth-tick
+- 完整URL: https://quote.alltick.io/quote-stock-b-api/depth-tick
 #### 2、外汇、贵金属、加密货币、商品接口地址：
 - 基本路径: /quote-b-api/depth-tick
-- 完整URL: https://quote.tradeswitcher.com/quote-b-api/depth-tick
+- 完整URL: https://quote.alltick.io/quote-b-api/depth-tick
 
 ### 请求示例
 #### 1、美股、港股、A股、大盘数据接口地址：
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
-<br />https://quote.tradeswitcher.com/quote-stock-b-api/depth-tick?token=您的token&query=queryData
+<br />https://quote.alltick.io/quote-stock-b-api/depth-tick?token=您的token&query=queryData
 #### 2、外汇、贵金属、加密货币、商品接口地址：
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
-<br />https://quote.tradeswitcher.com/quote-b-api/depth-tick?token=您的token&query=queryData
+<br />https://quote.alltick.io/quote-b-api/depth-tick?token=您的token&query=queryData
 
 
 ### 请求参数

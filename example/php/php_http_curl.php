@@ -5,13 +5,13 @@
 // Token Application: https://alltick.co
 // Replace "testtoken" in the URL below with your own token
 // API addresses for forex, cryptocurrencies, and precious metals:
-// https://quote.tradeswitcher.com/quote-b-ws-api
+// https://quote.alltick.io/quote-b-ws-api
 // Stock API address:
-// https://quote.tradeswitcher.com/quote-stock-b-ws-api
+// https://quote.alltick.io/quote-stock-b-ws-api
 
 $params = '{"trace":"1111111111111111111111111","data":{"code":"AAPL.US","kline_type":1,"kline_timestamp_end":0,"query_kline_num":10,"adjust_type":0}}';
 
-$url = 'https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=testtoken';
+$url = 'https://quote.alltick.io/quote-stock-b-api/kline?token=testtoken';
 $method = 'GET';
 
 $opts = array(CURLOPT_TIMEOUT => 10, CURLOPT_RETURNTRANSFER => 1, CURLOPT_SSL_VERIFYPEER => false, CURLOPT_SSL_VERIFYHOST => false);

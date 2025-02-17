@@ -30,12 +30,12 @@ type Request struct {
 	Token Application: https://alltick.co
 	Replace "testtoken" in the URL below with your own token
 	API addresses for forex, cryptocurrencies, and precious metals:
-	wss://quote.tradeswitcher.com/quote-b-ws-api
+	wss://quote.alltick.io/quote-b-ws-api
 	Stock API address:
-	wss://quote.tradeswitcher.com/quote-stock-b-ws-api
+	wss://quote.alltick.io/quote-stock-b-ws-api
 */
 const (
-	url = "wss://quote.tradeswitcher.com/quote-b-ws-api?token=testtoken"
+	url = "wss://quote.alltick.io/quote-b-ws-api?token=testtoken"
 )
 
 func websocket_example() {

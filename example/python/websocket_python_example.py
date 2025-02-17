@@ -9,15 +9,15 @@ import websocket    # pip install websocket-client
 # Token Application: https://alltick.co
 # Replace "testtoken" in the URL below with your own token
 # API addresses for forex, cryptocurrencies, and precious metals:
-# wss://quote.tradeswitcher.com/quote-b-ws-api
+# wss://quote.alltick.io/quote-b-ws-api
 # Stock API address:
-# wss://quote.tradeswitcher.com/quote-stock-b-ws-api
+# wss://quote.alltick.io/quote-stock-b-ws-api
 '''
 
 class Feed(object):
 
     def __init__(self):
-        self.url = 'wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=testtoken'  # Enter your websocket URL here
+        self.url = 'wss://quote.alltick.io/quote-stock-b-ws-api?token=testtoken'  # Enter your websocket URL here
         self.ws = None
 
     def on_open(self, ws):

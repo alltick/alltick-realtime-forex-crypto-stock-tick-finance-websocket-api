@@ -22,11 +22,11 @@ GET /static_info
 
 ### 接口地址
 - 基本路径: /quote-stock-b-api/static_info
-- 完整URL: https://quote.tradeswitcher.com/quote-stock-b-api/static_info
+- 完整URL: https://quote.alltick.io/quote-stock-b-api/static_info
 
 ### 请求示例
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
-<br />https://quote.tradeswitcher.com/quote-stock-b-api/static_info?token=您的token&query=queryData
+<br />https://quote.alltick.io/quote-stock-b-api/static_info?token=您的token&query=queryData
 
 ### 请求参数
 
