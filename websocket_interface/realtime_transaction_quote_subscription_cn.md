@@ -65,8 +65,8 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 				"code": "1288.HK"
             },{
 				"code": "AAPL.US"
-            },
-	],
+            }
+	]
     }
 }
 ```
