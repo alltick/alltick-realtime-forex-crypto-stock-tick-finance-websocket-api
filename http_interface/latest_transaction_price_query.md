@@ -4,6 +4,9 @@
 
 ## GET /trade-tick
 
+### Interface Description
+This interface supports batch requests for the latest trade prices (latest tick data) but does not support requests for historical trade prices (historical tick data).
+
 ### Request Frequency
 
 | Text          | Text                                                         | Text                                                         |
