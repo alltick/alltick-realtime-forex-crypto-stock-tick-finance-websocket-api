@@ -18,29 +18,32 @@ This interface supports batch requests for the latest trade prices (latest tick 
 | All HK Stocks | 1、Up to 20 requests per second <br />2、Suggest 50 code requests max due to GET URL length limit | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
 | All CN Stocks | 1、Up to 20 requests per second <br />2、Suggest 50 code requests max due to GET URL length limit | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
 
+### Interface Limitations
+- 1、Please be sure to read:[HTTP Interface Limitations](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/http_interface/interface_limitation_cn.md)
+- 2、Please be sure to read:[Error Code Descriptions](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/error_code_description_cn.md)
 
-## API Endpoints
+### API Endpoints
 
-**1.US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
+**1、US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
 
 - **Base Path:** `/quote-stock-b-api/trade-tick`
 - **Full URL:** `https://quote.alltick.io/quote-stock-b-api/trade-tick`
 
 
-**2.Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
+**2、Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
 
 - **Base Path:** `/quote-b-api/trade-tick`
 - **Full URL:** `https://quote.alltick.io/quote-b-api/trade-tick`
 
 
-## Request Examples
+### Request Examples
 
-**1.Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:** <br />When sending a query request, you must include the method name and token information. An example request is as follows:
+**1、Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:** <br />When sending a query request, you must include the method name and token information. An example request is as follows:
 
 https://quote.alltick.io/quote-stock-b-api/trade-tick?token=your_token&query=queryData
 
 
-**2.Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:** <br />When sending a query request, you must include the method name and token information. An example request is as follows:
+**2、Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:** <br />When sending a query request, you must include the method name and token information. An example request is as follows:
 
 https://quote.alltick.io/quote-b-api/trade-tick?token=your_token&query=queryData
 
