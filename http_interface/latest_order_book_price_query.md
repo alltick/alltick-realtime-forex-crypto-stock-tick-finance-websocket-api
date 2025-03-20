@@ -28,9 +28,11 @@ The following is the maximum market depth for each product type:
 | All HK Stocks | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
 | All CN Stocks | Up to 20 requests per second                      | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
 
+### Interface Limitations
+- 1、Please be sure to read:[HTTP Interface Limitations](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/http_interface/interface_limitation_cn.md)
+- 2、Please be sure to read:[Error Code Descriptions](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/error_code_description_cn.md)
 
-
-## API Endpoints
+### API Endpoints
 
 1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
 
@@ -45,7 +47,7 @@ The following is the maximum market depth for each product type:
 
      
 
-## Request Examples
+### Request Examples
 
 1. **Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:**
    <br />When sending a query request, you must include the method name and token information. An example request is as follows:
