@@ -5,13 +5,14 @@
 | Error Code | Error Msg                    | Meaning |
 | ---------- | ---------------------------- | --------------------------------------------------------- |
 | 200        | ok                           | Success |
-| 400        | request header param invalid | JSON request first layer parameter error |
-| 400        | request data param invalid   | Incorrect data field parameter in request JSON |
-| 401        | token invalid                | Token is invalid |
-| 402        | query invalid                | Request query param error |
-| 429        | rate limit                   | Request frequency limit |
-| 600        | code invalid                 | Request code product is invalid |
-| 601        | body empty                   | The request message body data is empty |
-| 603        | token level not enough       | The number of requested products or the number of K lines is greater than the token permission |
-| 604        | code unauthorized            | Token does not have permission to request products|
-| 605        | too many requests            | Request frequency limit |
+| 400        | request header param invalid | First-level JSON parameter issue <br/> Suggestions:<br/>1、Check if the JSON structure is complete.<br/>2、Ensure all required fields are correctly included.<br/>3、Validate that the data field is a valid object type.<br/>4、Verify the presence of key fields like trace.|
+| 400        | request data param invalid   | Invalid data field parameter in JSON request <br/>Suggestions: <br/>1、Check if the data field is a valid object.<br/>2、Ensure all required fields in data are correctly filled.<br/>3、Verify the content of the data field against the specific API documentation.<br/>4、Pay special attention to POST requests, ensuring the JSON parameters in the body are complete and correct. |
+| 401        | token invalid                | Token is invalid<br/> Possible Causes:<br/>1、Incorrect token format.<br/>2、Token account has expired.|
+| 402        | query invalid                | Invalid query parameters in request<br/>Suggestions:<br/>1、Check the query parameters in the GET request.<br/>2、URL-encode the query parameters.<br/>3、Ensure the parameter format meets API requirements.<br/>4、Verify that special characters are correctly escaped. |
+| 429        | rate limit                   | Exceeded the subscribed plan's request frequency<br/>Suggestions:<br/>1、Optimize request frequency and logic.<br/>2、Consider upgrading your plan for a higher request frequency.|
+| 600        | code invalid                 | Request code product is invalid <br/>Suggestions:<br/>1、Check the Request URL:<br/>Carefully verify the API documentation, as the request URLs for stock and forex/precious metals data are different.<br/>2、Check the Product Code:<br/>Refer to the product list to ensure the code is valid and accurate: [Product List](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)|
+| 601        | body empty                   | The request message body data is empty <br/>Suggestions:<br/>1、Check the message body of the POST request.<br/>2、Ensure the body contains complete JSON parameters.<br/>3、Pay special attention to batch retrieval interfaces like /batch-kline.<br/>4、Verify that all required fields are correctly filled.|
+| 603        | token level not enough       | Requested number of products or K-lines exceeds API limits<br/>Suggestions:<br/>1、Check Product Count: <br/>Ensure the number of requested products is within the plan limit.<br/>2、Validate K-line Requests:<br/> Confirm the K-line count meets API specifications. Batch requests allow only 2 K-lines at a time.|
+| 604        | code unauthorized            | Your token does not have permission to access this code.|
+| 605        | too many requests            | Generally, it is the Http interface request frequency limit<br/>Suggestions:<br/>1、Optimize request frequency and logic.<br/>2、Consider upgrading your plan for higher request frequency. |
+| 606        | too many requests and connection will be closed       | Generally, it is the Websocket interface request frequency limit<br/>Suggestions:<br/>1、Check WebSocket Connections:<br/>Ensure you do not exceed the maximum connections allowed by your plan.<br/>2、Control Request Frequency:<br/>Ensure a minimum interval of 3 seconds between multiple WebSocket requests.|
