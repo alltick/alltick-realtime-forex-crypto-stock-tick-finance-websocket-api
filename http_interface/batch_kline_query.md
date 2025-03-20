@@ -23,7 +23,12 @@ This interface allows batch querying of multiple products and multiple K-line ty
 | All HK Stocks | 1、1 request per second.<br />2、Each query can batch retrieve 500 items, where 500 equals the product count times the candlestick type. | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
 | All CN Stocks | 1、1 request per second.<br />2、Each query can batch retrieve 500 items, where 500 equals the product count times the candlestick type. | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
 
-## API Endpoints
+### Interface Limitations
+- 1、Please be sure to read:[HTTP Interface Limitations](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/http_interface/interface_limitation_cn.md)
+- 2、Please be sure to read:[Error Code Descriptions](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/error_code_description_cn.md)
+
+
+### API Endpoints
 
 1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
 
@@ -41,7 +46,7 @@ This interface allows batch querying of multiple products and multiple K-line ty
 
      
 
-## Request Examples
+### Request Examples
 
 1. **Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:** <br />The batch query function for retrieving the latest K-line data requires many parameters, which should be included in the request body. Only the `token` parameter should be included in the URL. <br />When sending the query request, you must include the method name and token information. An example request is as follows:
 
