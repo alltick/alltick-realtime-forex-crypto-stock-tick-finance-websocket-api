@@ -2,12 +2,14 @@
 
 ## POST 批量查询产品最新2根K线
 
-POST /batch-kline
-
-> 完整的URL请参见[API地址说明](./api_address_description_cn.md)
+## POST /batch-kline
 
 ###  接口说明
-该接口可以一次性批量查询多个产品，且可批量一次性查询多个k线类型（k线类型指的是1分钟，15分钟，30分钟等），但只能批量查询最新的2根k线
+该接口可以一次性批量查询多个产品，且可批量一次性查询多个k线类型（k线类型指的是1分钟，15分钟，30分钟等），但只能批量查询最新的2根k线。
+<br />使用HTTP接口获取K线的客户，建议将/kline和/batch-kline这2个接口结合使用,步骤如下：
+<br />1、首先，通过 /kline 接口轮询请求历史数据并存储到本地数据库，后续历史数据可直接从客户的数据库获取，无需再通过接口请求。
+<br />2、然后，后续持续使用 /batch-kline 接口批量请求多个产品的最新2根K线，并将数据更新到数据库。 
+<br />这种方式能够快速更新最新的K线，同时避免频繁请求历史K线造成频率受到限制。
 
 
 ### 接口限制
@@ -77,7 +79,7 @@ POST /batch-kline
 |» trace|body|string| 是 |追踪码，用来查询日志使用，请保证每次请求时唯一|
 |» data|body|object| 是 ||
 |»» data_list|body|[object]| 是 ||
-|»»» code|body|string| 是 |请查看code列表，选择你要查询的code|
+|»»» code|body|string| 是 |请查看code列表，选择你要查询的code:[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)|
 |»»» kline_type|body|integer| 是 |k线类型<br />1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）<br />最短的k线只支持1分钟|
 |»»» kline_timestamp_end|body|integer| 是 |从指定时间往前查询K线<br />1、传0表示从当前最新的交易日往前查k线<br />2、指定时间请传时间戳，传时间戳表示从该时间戳往前查k线<br />3、只有外汇贵金属加密货币支持传时间戳，股票类的code不支持|
 |»»» query_kline_num|body|integer| 是 |表示查询多少根K线，该接口最大只能查询2根k线|
