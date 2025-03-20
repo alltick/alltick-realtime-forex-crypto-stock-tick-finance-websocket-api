@@ -3,12 +3,16 @@
 # 最新成交价(Tick数据)批量订阅
 
 ## 接口说明
-
-该接口支持批量订阅产品的最新成交价(Tick数据)，该接口特性为对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求。订阅成功后会进行推送数据。
+该接口支持批量订阅产品的最新成交价(实时逐笔Tick数据)，不支持历史成交价格(历史逐笔tick数据)。
+<br />该接口特性为对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求（例如，如果您最初订阅了A、B、C这三只产品，想要追加订阅E、F、G，则需要重新发送一次A、B、C、E、F、G），订阅成功后会进行推送数据。
 
 注意：
 <br />1、订阅一次成功后，不需要再频繁的发起订阅请求，要求每10秒发送一次心跳，接口就会实时推送数据，在30秒内如果没有收到心跳请求，就会认为超时，断开请求者的websocket连接
 <br />2、接入时，客户可增加断开自动重连的逻辑，确保因网络等原因断开可自动重连
+
+## 接口限制
+- 1、请务必阅读：[Websocket接口限制说明](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/interface_limitation_cn.md)
+- 2、请务必阅读：[错误码说明](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/error_code_description_cn.md)
 
 ## 接口地址
 
@@ -52,7 +56,7 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 ### symbol定义
 | 字段 | 名称 | 类型   | 必填项 | 说明                     |
 | ---- | ---- | ------ | ------ | ------------------------ |
-| code | 代码 | string | 是     | 具体内容，请查阅code列表 |
+| code | 代码 | string | 是     | 具体内容，请查阅code列表：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
 ## 请求示例
 ```json
 {
