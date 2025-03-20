@@ -16,6 +16,9 @@
 | -------- | ------------------ | -------- | -------- | ------- | ------- |
 | 深度说明 | 最大1档            | 最大5档  | 最大10档 | 最大1档 | 最大5档 |
 
+## 接口限制
+- 1、请务必阅读：[Websocket接口限制说明](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/interface_limitation_cn.md)
+- 2、请务必阅读：[错误码说明](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/error_code_description_cn.md)
 
 ## 接口地址
 
