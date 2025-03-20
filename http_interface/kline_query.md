@@ -2,12 +2,14 @@
 
 ## GET K-Line Query
 
-GET /kline
-> Please refer to the complete URL in [API Address Description](./api_address_description.md)
+## GET /kline
 
 ### Interface Description
-
-This interface can be used to query historical K-lines, but only one product can be queried at a time. It is recommended to cache the queried historical K-lines locally.
+This interface can be used to query historical K-line data, but it only allows querying one product at a time. It is recommended to cache the retrieved historical K-lines in a local database.
+<br />For clients using the HTTP interface to obtain K-lines, it is advisable to combine the /kline and /batch-kline interfaces as follows:
+<br />1、First, use the /kline interface to poll for historical data and store it in a local database. Subsequent historical data can be retrieved directly from the client's database without needing to make additional requests through the interface.
+<br />2、Then, continuously use the /batch-kline interface to request the latest two K-lines for multiple products in bulk and update the database with this data.
+<br />This method allows for quick updates of the latest K-lines while avoiding limitations on request frequency caused by frequent requests for historical K-lines.
 
 ### Request Frequency
 
@@ -75,7 +77,7 @@ Encode the following JSON using URL encoding and assign it to the 'query' query 
 | -------------------- | ------- | -------- | ----------------------------------------------------- |
 | trace                | string  | Yes      | Trace code used for logging purposes, ensure uniqueness for each request |
 | data                 | object  | Yes      |                                                       |
-| » code               | string  | Yes      | Refer to the code list and select the code you want to query |
+| » code               | string  | Yes      | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
 | » kline_type         | integer | Yes      | Type of K-line: 1 minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K (Note: Stocks do not support 2-hour K and 4-hour K)|
 | » kline_timestamp_end| integer | Yes      | Indicates the time point to query backward from. Set to 0 for current time, only effective for non-stock type codes |
 | » query_kline_num    | integer | Yes      | Number of K-lines to query, maximum of 1000 |
