@@ -2,11 +2,10 @@
 
 ## GET 股票产品基础信息批量查询
 
-GET /static_info
-> 完整的URL请参见[API地址说明](./api_address_description_cn.md)
+## GET /static_info
 
 ### 接口说明
-目前只支持股票产品的基础信息查询
+该接口仅支持批量请求美股、港股、A股产品的部分基础信息。
 
 ### 请求频率
 
@@ -61,7 +60,7 @@ GET /static_info
 |trace|string| 是 ||
 |data|object| 是 ||
 |» symbol_list|[object]| 是 ||
-|»» code|string| 否 |代码|
+|»» code|string| 否 |请查看code列表，选择你要查询的code：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)|
 
 > 返回示例
 
