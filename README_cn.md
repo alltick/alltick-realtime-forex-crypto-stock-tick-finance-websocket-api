@@ -1,12 +1,6 @@
 > [English](./README.md) | [中文](./README_cn.md)
 
 ## 作者：AllTick
-## 联系我们
-Email: support@alltick.co
-
-Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
-
-Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 
 ## 项目名称：AllTick Real-time Quotation APIs
 
@@ -117,9 +111,7 @@ Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 ## 联系我们
 Email: support@alltick.co
 
-Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
-
-Telegram: [https://t.me/alltick001](https://t.me/alltick001)
-
 ## 其他作品
 官网:[https://alltick.co](https://alltick.co)
+备用官网：[https://alltick.io](https://alltick.io)
+
