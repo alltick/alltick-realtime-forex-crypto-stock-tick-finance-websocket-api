@@ -2,9 +2,7 @@
 
 ## GET Latest Trade Tick Query
 
-GET /trade-tick
-> Please refer to the complete URL in [API Address Description](./api_address_description.md)
-
+## GET /trade-tick
 
 ### Request Frequency
 
@@ -78,7 +76,7 @@ The following JSON should be URL-encoded and assigned to the `query` query strin
 | trace          | string    | Yes      |             |
 | data           | object    | Yes      |             |
 | » symbol_list  | [object]  | Yes      |             |
-| »» code        | string    | No       | Code        |
+| »» code        | string    | No       | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)     |
 
 > Response Example
 
