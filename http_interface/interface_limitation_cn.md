@@ -38,12 +38,12 @@
 | 计划     | 最大可请求代码（code）数量      |
 | :------- | :------------------------------ |
 | 免费     | 每1次请求，最大可请求 5个code   |
-| 基础     | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 高级     | 由于GET请求url长度限制，每次最大建议请求50个code  |
-| 专业     | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 全部港股 | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 全部A股  | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 全部美股 | 由于GET请求url长度限制，每次最大建议请求50个code |
+| 基础     | 由于GET请求url长度限制，每次最大建议请求50个code<br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_transaction_quote_subscription_cn.md)|
+| 高级     | 由于GET请求url长度限制，每次最大建议请求50个code <br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_transaction_quote_subscription_cn.md) |
+| 专业     | 由于GET请求url长度限制，每次最大建议请求50个code<br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_transaction_quote_subscription_cn.md)|
+| 全部港股 | 由于GET请求url长度限制，每次最大建议请求50个code <br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_transaction_quote_subscription_cn.md)|
+| 全部A股  | 由于GET请求url长度限制，每次最大建议请求50个code<br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_transaction_quote_subscription_cn.md) |
+| 全部美股 | 由于GET请求url长度限制，每次最大建议请求50个code<br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_transaction_quote_subscription_cn.md)|
 
 ## 5、盘口深度(Order Book)查询限制
 - **/depth-tick接口**：每次查询请求可针对多个产品代码（code）查询盘口，但购买的计划不同，可批量请求的代码（code）数量也不同，详见下面表格
@@ -51,13 +51,13 @@
 
 | 计划     | 最大可请求代码（code）数量      |
 | :------- | :------------------------------ |
-| 免费     | 由于GET请求url长度限制，每次最大建议请求50个code   |
-| 基础     | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 高级     | 由于GET请求url长度限制，每次最大建议请求50个code  |
-| 专业     | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 全部港股 | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 全部A股  | 由于GET请求url长度限制，每次最大建议请求50个code |
-| 全部美股 | 由于GET请求url长度限制，每次最大建议请求50个code |
+| 免费     | 由于GET请求url长度限制，每次最大建议请求50个code <br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_order_book_quote_subscription_cn.md)  |
+| 基础     | 由于GET请求url长度限制，每次最大建议请求50个code <br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_order_book_quote_subscription_cn.md)|
+| 高级     | 由于GET请求url长度限制，每次最大建议请求50个code <br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_order_book_quote_subscription_cn.md) |
+| 专业     | 由于GET请求url长度限制，每次最大建议请求50个code<br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_order_book_quote_subscription_cn.md) |
+| 全部港股 | 由于GET请求url长度限制，每次最大建议请求50个code<br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_order_book_quote_subscription_cn.md) |
+| 全部A股  | 由于GET请求url长度限制，每次最大建议请求50个code<br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_order_book_quote_subscription_cn.md) |
+| 全部美股 | 由于GET请求url长度限制，每次最大建议请求50个code <br /> 推荐使用websocket接口，支持批量订阅更多code：[接口](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/realtime_order_book_quote_subscription_cn.md)|
 
 ## 6、基础信息查询限制
 - **/static_info接口**：每次查询请求可针对多个产品代码（code）查询盘口，但购买的计划不同，可批量请求的代码（code）数量也不同，详见下面表格
