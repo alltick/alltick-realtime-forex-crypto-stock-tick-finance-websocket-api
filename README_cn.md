@@ -112,6 +112,6 @@
 Email: support@alltick.co
 
 ## 其他作品
-官网:[https://alltick.co](https://alltick.co)
-备用官网：[https://alltick.io](https://alltick.io)
+- 官网：[https://alltick.co](https://alltick.co)
+- 备用官网：[https://alltick.io](https://alltick.io)
 
