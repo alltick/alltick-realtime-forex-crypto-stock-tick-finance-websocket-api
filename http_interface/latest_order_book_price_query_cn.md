@@ -2,8 +2,7 @@
 
 ## GET 最新盘口(Order Book)查询
 
-GET /depth-tick
-> 完整的URL请参见[API地址说明](./api_address_description_cn.md)
+## GET /depth-tick
 
 ### 接口说明
 以下是每类产品最大的盘口深度：
@@ -75,7 +74,7 @@ GET /depth-tick
 |trace|string| 是 ||
 |data|object| 是 ||
 |» symbol_list|[object]| 是 ||
-|»» code|string| 否 |代码|
+|»» code|string| 否 |请查看code列表，选择你要查询的code：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
 
 > 返回示例
 
