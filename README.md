@@ -1,10 +1,4 @@
 > [English](./README.md) | [中文](./README_cn.md)
-## Contact Us
-Email: support@alltick.co
-
-Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
-
-Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 
 ## Author: AllTick
 
@@ -15,7 +9,7 @@ Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, US stock API, Shanghai and Shenzhen stock API, A-share API, forex API, commodity precious metals API, cryptocurrency API, and other real-time market data.
 
 ## Official Website
-[https://alltick.co](https://alltick.co)
+[https://alltick.co](https://alltick.co/en-US)
 
 ## Features:
 
@@ -117,9 +111,5 @@ Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, U
 ## Contact Us
 Email: support@alltick.co
 
-Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
-
-Telegram: [https://t.me/alltick001](https://t.me/alltick001)
-
 ## Other Works
-Official Website: [https://alltick.co](https://alltick.co)
+Official Website: [https://alltick.co](https://alltick.co/en-US)
