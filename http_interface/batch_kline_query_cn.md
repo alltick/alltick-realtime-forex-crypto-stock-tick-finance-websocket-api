@@ -149,7 +149,7 @@
 |» data|object|true||||
 |»» kline_list|[array]|true||||
 |»»» code|string|true|||产品代码|
-|»»» kline_type|integer|true|||k线类型，1是分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）|
+|»»» kline_type|integer|true|||k线类型，<br />1、1是分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）<br />2、最短的k线只支持1分钟|
 |»»» kline_data|[array]|true||||
 |»»»» timestamp|string|true|||该K线时间戳|
 |»»»» open_price|string|true|||该K线开盘价|
