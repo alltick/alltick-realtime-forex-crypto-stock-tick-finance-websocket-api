@@ -2,13 +2,15 @@
 
 ## POST Query the latest 2 K lines of products in batches
 
-POST /batch-kline
-
-> Please refer to the complete URL in [API Address Description](./api_address_description.md)
+## POST /batch-kline
 
 ### Interface Description
 
-This interface can query multiple products in batches at one time, and can query multiple k-line types in batches at one time (k-line types refer to 1 minute, 15 minutes, 30 minutes, etc.), but can only query the latest 2 k-lines in batches.
+This interface allows batch querying of multiple products and multiple K-line types (e.g., 1-minute, 15-minute, 30-minute), but only the latest two K-lines can be queried at once.
+<br />For clients using the HTTP interface to obtain K-lines, it is advisable to combine the /kline and /batch-kline interfaces as follows:
+<br />1、First, use the /kline interface to poll for historical data and store it in a local database. Subsequent historical data can be retrieved directly from the client's database without needing to make additional requests through the interface.
+<br />2、Then, continuously use the /batch-kline interface to request the latest two K-lines for multiple products in bulk and update the database with this data.
+<br />This method allows for quick updates of the latest K-lines while avoiding limitations on request frequency caused by frequent requests for historical K-lines.
 
 ### Request Frequency
 
