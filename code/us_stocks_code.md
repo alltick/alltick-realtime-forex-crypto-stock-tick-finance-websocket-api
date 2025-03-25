@@ -1,4 +1,4 @@
-# 美股
+# 美股（纳斯达克交易所）
 
 ## code示例
 
@@ -20,7 +20,7 @@
 | XOM.US   | Exxon Mobil Corp.                |
 
 
-# US Stock
+# US Stock（Nasdaq）
 
 ## Code Example
 
