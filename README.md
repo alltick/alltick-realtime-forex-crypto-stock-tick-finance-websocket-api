@@ -75,7 +75,8 @@ Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, U
 - [Get Latest Order Book Quote Query](./http_interface/latest_order_book_price_query.md)
 - [K-Line Query](./http_interface/kline_query.md)
 - [Batch Code Latest K-Line Query](./http_interface/batch_kline_query.md)
-- [Product Information Query](./http_interface/static_query.md)
+- [Get Basic Information About Stock Products](./http_interface/static_query.md)
+- [Price Changes, Market Closure, Holidays, Limit up/down, New Listings, And Delistings](./http_interface/price_changes_closure_holidays_delistings.md)
 
 ### WebSocket Interface
 - [Quotation API Address Description](./websocket_interface/api_address_description.md)
@@ -85,6 +86,7 @@ Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, U
 - [Realtime Transaction Quote Subscription](./websocket_interface/realtime_transaction_quote_subscription.md)
 - [Realtime Order Book Quote Subscription](./websocket_interface/realtime_order_book_quote_subscription.md)
 - [Cancel Realtime Quote Subscription](./websocket_interface/cancel_realtime_quote_subscription.md)
+- [K-Line Push (Not Supported)](./websocket_interface/k_line_push.md)
 
 ## Free Token Acquisition
 - [Token Application](./token_application.md)
