@@ -75,6 +75,7 @@
 - [获取历史K线](./http_interface/kline_query_cn.md)
 - [批量获取产品最新K线](./http_interface/batch_kline_query_cn.md)
 - [获取股票产品基础信息](./http_interface/static_query_cn.md)
+- [涨跌幅、休市、假期、涨停跌停、新股上市和退市说明](./http_interface/price_changes_closure_holidays_delistings_cn.md)
 
 ### websocket接口
 - [行情API地址说明](./websocket_interface/api_address_description_cn.md)
@@ -84,6 +85,7 @@
 - [实时成交报价订阅](./websocket_interface/realtime_transaction_quote_subscription_cn.md)
 - [实时盘口报价订阅](./websocket_interface/realtime_order_book_quote_subscription_cn.md)
 - [取消实时报价订阅](./websocket_interface/cancel_realtime_quote_subscription_cn.md)
+- [K线推送(不支持)](./websocket_interface/k_line_push_cn.md)
 
 ## 免费token获取
 - [token申请](./token_application_cn.md)
