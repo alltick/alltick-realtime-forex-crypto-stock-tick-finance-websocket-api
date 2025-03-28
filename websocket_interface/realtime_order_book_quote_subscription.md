@@ -111,12 +111,12 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 | Field   | Name             | Type   | Description |
 | ------- | ---------------- | ------ | ----------- |
 | price   | Bid Price        | string |             |
-| volume  | Bid Volume       | string |             |
+| volume  | Bid Volume       | string |1、Forex, precious metals, and CFD indices do not provide volume.<br />2、Stocks and cryptocurrency data provide volume.|
 ### asks definition
 | Field   | Name             | Type   | Description |
 | ------- | ---------------- | ------ | ----------- |
 | price   | Ask Price        | string |             |
-| volume  | Ask Volume       | string |             |
+| volume  | Ask Volume       | string | 1、Forex, precious metals, and CFD indices do not provide volume.<br />2、Stocks and cryptocurrency data provide volume. |
 ## Response Example
 ```json
 {
