@@ -116,12 +116,12 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 | 字段   | 名称             | 类型   | 说明 |
 | ------ | ---------------- | ------ | ---- |
 | price  | 买一价，买盘价格 | string |      |
-| volume | 买一量，买盘量   | string |      |
+| volume | 买一量，买盘量   | string |1、外汇、贵金属、CFD指数不提供volume<br />2、股票，加密货币数据均提供volume    |
 ### asks定义
 | 字段   | 名称             | 类型   | 说明 |
 | ------ | ---------------- | ------ | ---- |
 | price  | 卖一价，买盘价格 | string |      |
-| volume | 卖一量，买盘量   | string |      |
+| volume | 卖一量，买盘量   | string |1、外汇、贵金属、CFD指数不提供volume<br />2、股票，加密货币数据均提供volume    |
 ## 应答示例
 ```json
 {
