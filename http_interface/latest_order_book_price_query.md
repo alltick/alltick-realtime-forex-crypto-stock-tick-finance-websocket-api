@@ -154,4 +154,4 @@ Status Code **200**
 | »» »» volume | string | false    |             |              | Volume      |
 | »» » asks    | [object] | false  |             |              | Ask list    |
 | »» »» price  | string | false    |             |              | Price       |
-| »» »» volume | string | false    |             |              | Volume      |
+| »» »» volume | string | false    |             |              | Volume <br /> 1、Forex, precious metals, and CFD indices do not provide volume.<br />2、Stocks and cryptocurrency data provide volume.    |
