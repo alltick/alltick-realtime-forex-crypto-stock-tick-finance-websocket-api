@@ -138,4 +138,4 @@
 |»»»» volume|string|false|||量|
 |»»» asks|[object]|false|||ask列表|
 |»»»» price|string|false|||价|
-|»»»» volume|string|false|||量|
+|»»»» volume|string|false|||量<br />1、外汇、贵金属、CFD指数不提供volume<br />2、股票，加密货币数据均提供volume|
