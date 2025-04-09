@@ -14,7 +14,7 @@
 
 - **Latest Trade Price (Tick by Tick) API**：1 request per second
 - **Order Book API:** 1 request per second When making multiple API requests within the same WebSocket connection, the interval between requests must be at least 1 second. For example, if User A sends a request via WebSocket at 28 minutes and 30 seconds and tries to send another request within the same second, the second request will be rejected by the system.
-- When initiating multiple WebSocket requests across different WebSocket connections, users should ensure a 2-second interval between each WebSocket request. For instance, if User A has purchased the Advanced plan, which supports connecting to 3 WebSockets simultaneously, and initiates the first WebSocket at 28 minutes and 30 seconds, they should wait for 2 seconds before subscribing to the second WebSocket at 28 minutes and 33 seconds. Once both WebSocket subscriptions are successful, maintain a 10-second interval for sending heartbeats to receive real-time data push from the API.
+- When initiating multiple WebSocket requests across different WebSocket connections, users should ensure a 3-second interval between each WebSocket request. For instance, if User A has purchased the Advanced plan, which supports connecting to 3 WebSockets simultaneously, and initiates the first WebSocket at 28 minutes and 30 seconds, they should wait for 3 seconds before subscribing to the second WebSocket at 28 minutes and 34 seconds. Once both WebSocket subscriptions are successful, maintain a 10-second interval for sending heartbeats to receive real-time data push from the API.
 
 
 
