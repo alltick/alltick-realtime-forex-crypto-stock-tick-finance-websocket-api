@@ -1,6 +1,6 @@
 > [English](./kline_query.md) | [中文](./kline_query_cn.md)
 
-## GET 单产品历史K线查询
+## GET 单产品历史K线查询（最高、最低、开盘、收盘价）
 
 ## GET /kline
 
