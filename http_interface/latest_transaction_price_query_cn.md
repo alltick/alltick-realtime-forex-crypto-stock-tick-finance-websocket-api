@@ -1,11 +1,11 @@
 > [English](./latest_transaction_price_query.md) | [中文](./latest_transaction_price_query_cn.md)
 
-## GET 最新成交价批量查询
+## GET 最新成交价批量查询（逐笔tick、最新价、当前价）
 
 ## GET /trade-tick
 
 ### 接口说明
-该接口支持批量请求产品的最新成交价(最新逐笔Tick数据)，不支持请求历史成交价(历史逐笔tick数据)。
+该接口支持批量请求产品的最新成交价(最新逐笔Tick数据、最新价、当前价)，不支持请求历史成交价(历史逐笔tick数据)。
 
 ### 接口频率
 
