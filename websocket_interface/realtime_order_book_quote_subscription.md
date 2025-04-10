@@ -15,7 +15,7 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 
 |                    | FX、Metals      | Cryptocurrency  | HK Stocks        | CN Stocks       |
 | ---------------------- | --------------- | --------------- | ---------------- | --------------- |
-| Order Book Description | Maximum 1 gears | Maximum 5 gears | Maximum 10 gears | Maximum 5 gears |
+| Order Book Description | Maximum 1 gears<br />(Only Price, No Volume) | Maximum 5 gears | Maximum 10 gears | Maximum 5 gears |
 
 
 ## Interface Limitations
