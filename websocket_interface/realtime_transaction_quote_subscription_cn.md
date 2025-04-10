@@ -1,6 +1,6 @@
 > [English](./realtime_transaction_quote_subscription.md) | [中文](./realtime_transaction_quote_subscription_cn.md)
 
-# 最新成交价(Tick数据)批量订阅
+# 最新成交价(Tick数据、最新价、当前价)批量订阅
 
 ## 接口说明
 该接口支持批量订阅产品的最新成交价(实时逐笔Tick数据)，不支持历史成交价格(历史逐笔tick数据)。
