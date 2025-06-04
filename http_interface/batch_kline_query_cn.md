@@ -157,7 +157,7 @@
 |»»» kline_data|[array]|true||||
 |»»»» timestamp|string|true|||该K线时间戳|
 |»»»» open_price|string|true|||该K线开盘价|
-|»»»» close_price|string|true|||该K线收盘价|
+|»»»» close_price|string|true|||该K线收盘价：<br />1、交易时段内，最新一根K线，该价格也是最新成交价 <br />2、休市期间，最新一根K线，该价格是收盘价|
 |»»»» high_price|string|true|||该K线最高价|
 |»»»» low_price|string|true|||该K线最低价|
 |»»»» volume|string|true|||该K线成交数量|
