@@ -102,9 +102,9 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 | code            | 代码       | string | 具体内容，请查阅code列表   |
 | seq             | 报价序号   | string |                            |
 | tick_time       | 报价时间戳 | string | 单位毫秒                   |
-| price           | 成交价     | string |                            |
-| volume          | 成交量     | string |                            |
-| turnover        | 成交额     | string |                            |
+| price           | 成交价     | string | 最新成交价                 |
+| volume          | 成交量     | string | 最新一口成交价对应的成交量  |
+| turnover        | 成交额     | string | 成交额：<br />1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price * volume  <br />2、股票、加密货币正常返回成交额。                         |
 | trade_direction | 成交方向   | uint32 | 0为默认值，1为BUY，2为SELL |
 ## 应答示例
 ```json
