@@ -143,7 +143,7 @@ Status Code **200**
 | »» kline_list   | [object]  | true     |             |              |                                                             |
 | »»» timestamp   | string    | true     |             |              | Timestamp of the K-line                                     |
 | »»» open_price  | string    | true     |             |              | Opening price of the K-line                                 |
-| »»» close_price | string    | true     |             |              | Closing price of the K-line                                 |
+| »»» close_price | string    | true     |             |              | Close price of the Kline:<br/>1、During trading hours, for the latest Kline, this is also the last traded price.<br/>2、During market closure, for the latest Kline, this is the official closing price.                               |
 | »»» high_price  | string    | true     |             |              | Highest price of the K-line                                 |
 | »»» low_price   | string    | true     |             |              | Lowest price of the K-line                                  |
 | »»» volume      | string    | true     |             |              | Trading volume of the K-line                                |
