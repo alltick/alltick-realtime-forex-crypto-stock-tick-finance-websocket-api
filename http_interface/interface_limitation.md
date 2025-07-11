@@ -21,8 +21,9 @@
 
 **`/kline`** **API**:
  - Queries must specify **one product code** per request.
- - A maximum of **1,000 K-line records** can be returned per request.
- - If more than 1,000 records are requested, only the first 1,000 will be returned.
+ - A maximum of **500 K-line records** can be returned per request.
+ - If more than 500 records are requested, only the first 500 will be returned.
+   
 **`/batch-kline`** **API**:
  - Supports multiple product codes per request.
  - The number of codes allowed depends on the purchased plan.
