@@ -84,7 +84,7 @@ Encode the following JSON using URL encoding and assign it to the 'query' query 
 | » code               | string  | Yes      | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
 | » kline_type         | integer | Yes      | Type of K-line: <br />1、1 represents 1-minute K-line, 2 represents 5-minute K-line, 3 represents 15-minute K-line, 4 represents 30-minute K-line, 5 represents 1-hour K-line, 6 represents 2-hour K-line (not supported for stocks), 7 represents 4-hour K-line (not supported for stocks), 8 represents daily K-line, 9 represents weekly K-line, and 10 represents monthly K-line. (Note: Stocks do not support 2-hour and 4-hour K-lines.)<br />2、The shortest K-line supported is 1 minute |
 | » kline_timestamp_end| integer | Yes      | Query K-lines from a specified time:<br />1、Send 0 to query from the latest trading day.<br />2、Send a timestamp to query from that time.<br />3、Only forex, precious metals, and cryptocurrencies support timestamps; stock codes do not|
-| » query_kline_num    | integer | Yes      | Number of K-lines to query, maximum of 1000 |
+| » query_kline_num    | integer | Yes      | Number of K-lines to query, maximum of 500 |
 | » adjust_type        | integer | Yes      | Adjustment type, effective only for stock codes, e.g., 0: ex-rights, 1: pre-adjustment, currently only supports 0 |
 
 > Response Example
