@@ -31,20 +31,20 @@
 ### 接口地址
 #### 1、美股、港股、A股、大盘数据接口地址：
 - 基本路径: /quote-stock-b-api/batch-kline
-- 完整URL: https://quote.alltick.io/quote-stock-b-api/batch-kline
+- 完整URL: https://quote.alltick.co/quote-stock-b-api/batch-kline
 #### 2、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：
 - 基本路径: /quote-b-api/batch-kline
-- 完整URL: https://quote.alltick.io/quote-b-api/batch-kline
+- 完整URL: https://quote.alltick.co/quote-b-api/batch-kline
 
 ### 请求示例
 #### 1、美股、港股、A股、大盘数据请求示例：
 批量查询产品最新K线功能，由于批量查询参数比较多，放入body中，url参数中只保留token字段参数。
 <br />在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
-<br />https://quote.alltick.io/quote-stock-b-api/batch-kline?token=您的token
+<br />https://quote.alltick.co/quote-stock-b-api/batch-kline?token=您的token
 #### 2、外汇、贵金属、加密货币、原油、CFD指数、商品请求示例：
 批量查询产品最新K线功能，由于批量查询参数比较多，放入body中，url参数中只保留token字段参数。
 <br />在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：
-<br />https://quote.alltick.io/quote-b-api/batch-kline?token=您的token
+<br />https://quote.alltick.co/quote-b-api/batch-kline?token=您的token
 
 ### 批量查询产品最新K线功能，由于批量查询参数比较多，放入body中，url参数中只保留token字段参数。
 
