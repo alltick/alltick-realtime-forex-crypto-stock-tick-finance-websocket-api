@@ -27,25 +27,25 @@ This interface supports batch requests for the latest trade prices (latest tick 
 **1、US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
 
 - **Base Path:** `/quote-stock-b-api/trade-tick`
-- **Full URL:** `https://quote.alltick.io/quote-stock-b-api/trade-tick`
+- **Full URL:** `https://quote.alltick.co/quote-stock-b-api/trade-tick`
 
 
 **2、Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
 
 - **Base Path:** `/quote-b-api/trade-tick`
-- **Full URL:** `https://quote.alltick.io/quote-b-api/trade-tick`
+- **Full URL:** `https://quote.alltick.co/quote-b-api/trade-tick`
 
 
 ### Request Examples
 
 **1、Request Example for US Stocks, Hong Kong Stocks, A Shares, Major Index Data:** <br />When sending a query request, you must include the method name and token information. An example request is as follows:
 
-https://quote.alltick.io/quote-stock-b-api/trade-tick?token=your_token&query=queryData
+https://quote.alltick.co/quote-stock-b-api/trade-tick?token=your_token&query=queryData
 
 
 **2、Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:** <br />When sending a query request, you must include the method name and token information. An example request is as follows:
 
-https://quote.alltick.io/quote-b-api/trade-tick?token=your_token&query=queryData
+https://quote.alltick.co/quote-b-api/trade-tick?token=your_token&query=queryData
 
 
 
