@@ -25,24 +25,24 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 ## API Endpoints
 **1、Stock Market Data API for US, HK, A-shares, and Index:**
 <br />Base Path: /quote-stock-b-ws-api
-<br />Full URL: wss://quote.alltick.io/quote-stock-b-ws-api 
+<br />Full URL: wss://quote.alltick.co/quote-stock-b-ws-api 
 
 <br />**2、API for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
 <br />Base Path: /quote-b-ws-api
-<br />Full URL: wss://quote.alltick.io/quote-b-ws-api
+<br />Full URL: wss://quote.alltick.co/quote-b-ws-api
 
 ## Request Examples
 **1、Request Example for US, HK, A-shares, and Index Data:**
 <br />Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-<br />wss://quote.alltick.io/quote-stock-b-ws-api?token=your_token
+<br />wss://quote.alltick.co/quote-stock-b-ws-api?token=your_token
 
 <br />After a successful connection, you can subscribe to specific stock market data as needed. Please refer to the documentation below for detailed calling methods.
 
 **2、Request Example for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
 <br />Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-<br />wss://quote.alltick.io/quote-b-ws-api?token=your_token
+<br />wss://quote.alltick.co/quote-b-ws-api?token=your_token
 
 <br />After a successful connection, you can subscribe to specific forex, cryptocurrency, precious metals, and commodities data as needed. Please refer to the documentation below for detailed calling methods.
 
