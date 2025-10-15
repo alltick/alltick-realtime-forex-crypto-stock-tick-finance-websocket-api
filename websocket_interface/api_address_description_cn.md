@@ -6,9 +6,9 @@
 
 /quote-stock-b-ws-api 股票订阅API<br/>
 
-订阅API为websocket协议，完整的url为:<br/>wss://quote.alltick.io/quote-stock-b-ws-api
+订阅API为websocket协议，完整的url为:<br/>wss://quote.alltick.co/quote-stock-b-ws-api
 
-每一次建立连接时，需要带上token信息:<br/>wss://quote.alltick.io/quote-stock-b-ws-api?token=你的token<br/>
+每一次建立连接时，需要带上token信息:<br/>wss:/quote.alltick.co/quote-stock-b-ws-api?token=你的token<br/>
 
 建立连接之后，就可以订阅具体的接口数据了，具体调用方式，请查看websocket接口列表<br/>
 
@@ -20,10 +20,10 @@
 
 订阅API为websocket协议，完整的url为:<br/>
 
-wss://quote.alltick.io/quote-b-ws-api<br/>
+wss://quote.alltick.co/quote-b-ws-api<br/>
 
 每一次建立连接时，需要带上token信息:<br/>
-wss://quote.alltick.io/quote-b-ws-api?token=你的token<br/>
+wss://quote.alltick.co/quote-b-ws-api?token=你的token<br/>
 
 建立连接之后，就可以订阅具体的接口数据了，具体调用方式，请查看websocket接口列表<br/>
 
