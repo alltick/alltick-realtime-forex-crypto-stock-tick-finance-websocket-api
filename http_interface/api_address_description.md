@@ -27,7 +27,7 @@ For specific calling methods, please refer to the HTTP interface list<br/>
 ## Forex, Cryptocurrency (Digital Currency), Commodity (Precious Metal) HTTP Interface API Address
 /quote-b-api Forex, Cryptocurrency (Digital Currency), Commodity (Precious Metal) Query API<br/>
 
-The query API uses HTTPS protocol, the complete URL is:<br/>https://quote.alltick.io/quote-b-api<br/>
+The query API uses HTTPS protocol, the complete URL is:<br/>https://quote.alltick.co/quote-b-api<br/>
 
 Each time a query request is sent, the method name and token information need to be provided<br/>
 
