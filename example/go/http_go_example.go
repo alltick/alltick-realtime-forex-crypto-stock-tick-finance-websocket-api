@@ -18,9 +18,9 @@ func http_example() {
 		token申请：https://alltick.co
 		把下面url中的testtoken替换为您自己的token
 		外汇，加密货币（数字币），贵金属的api址：
-		https://quote.alltick.io/quote-b-api
+		https://quote.alltick.co/quote-b-api
 		股票api地址:
-		https://quote.alltick.io/quote-stock-b-api
+		https://quote.alltick.co/quote-stock-b-api
 	*/
 	url := "https://quote.alltick.io/quote-stock-b-api/kline"
 	log.Println("请求内容：", url)
