@@ -32,10 +32,10 @@ type Request struct {
 	API addresses for forex, cryptocurrencies, and precious metals:
 	wss://quote.alltick.io/quote-b-ws-api
 	Stock API address:
-	wss://quote.alltick.io/quote-stock-b-ws-api
+	wss://quote.alltick.co/quote-stock-b-ws-api
 */
 const (
-	url = "wss://quote.alltick.io/quote-b-ws-api?token=testtoken"
+	url = "wss://quote.alltick.co/quote-b-ws-api?token=testtoken"
 )
 
 func websocket_example() {
