@@ -10,16 +10,16 @@ use Workerman\Connection\AsyncTcpConnection;
 // Token Application: https://alltick.co
 // Replace "testtoken" in the URL below with your own token
 // API addresses for forex, cryptocurrencies, and precious metals:
-// wss://quote.alltick.io/quote-b-ws-api
+// wss://quote.alltick.co/quote-b-ws-api
 // Stock API address:
-// wss://quote.alltick.io/quote-stock-b-ws-api
+// wss://quote.alltick.co/quote-stock-b-ws-api
 
 $worker = new Worker();
 // When the process starts
 $worker->onWorkerStart = function()
 {
     // Connect to remote websocket server using the websocket protocol
-    $ws_connection = new AsyncTcpConnection("ws://quote.alltick.io/quote-stock-b-ws-api?token=testtoken");
+    $ws_connection = new AsyncTcpConnection("ws://quote.alltick.co/quote-stock-b-ws-api?token=testtoken");
     // Send a websocket heartbeat opcode (0x9) to the server every 55 seconds
     $ws_connection->websocketPingInterval = 10;
     $ws_connection->websocketType = Ws::BINARY_TYPE_BLOB; // BINARY_TYPE_BLOB for text, BINARY_TYPE_ARRAYBUFFER for binary
