@@ -21,7 +21,7 @@ public class HttpJavaExample {
             Stock API address:
             https://quote.alltick.io/quote-stock-b-api
             */
-            String url = "http://quote.alltick.io/quote-stock-b-api/kline?token=testtoken&query=%7B%22trace%22%20%3A%20%22java_http_test1%22%2C%22data%22%20%3A%20%7B%22code%22%20%3A%20%22700.HK%22%2C%22kline_type%22%20%3A%201%2C%22kline_timestamp_end%22%20%3A%200%2C%22query_kline_num%22%20%3A%202%2C%22adjust_type%22%3A%200%7D%7D";
+            String url = "http://quote.alltick.co/quote-stock-b-api/kline?token=testtoken&query=%7B%22trace%22%20%3A%20%22java_http_test1%22%2C%22data%22%20%3A%20%7B%22code%22%20%3A%20%22700.HK%22%2C%22kline_type%22%20%3A%201%2C%22kline_timestamp_end%22%20%3A%200%2C%22query_kline_num%22%20%3A%202%2C%22adjust_type%22%3A%200%7D%7D";
 
             URL obj = new URL(url);
 
