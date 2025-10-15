@@ -10,9 +10,9 @@ import java.util.TimerTask;
 // Token Application: https://alltick.co
 // Replace "testtoken" in the URL below with your own token
 // API addresses for forex, cryptocurrencies, and precious metals:
-// wss://quote.alltick.io/quote-b-ws-api
+// wss://quote.alltick.co/quote-b-ws-api
 // Stock API address:
-// wss://quote.alltick.io/quote-stock-b-ws-api
+// wss://quote.alltick.co/quote-stock-b-ws-api
 
 @ClientEndpoint
 public class WebSocketJavaExample {
@@ -82,12 +82,12 @@ public class WebSocketJavaExample {
         // Token Application: https://alltick.co
         // Replace "testtoken" in the URL below with your own token
         // API addresses for forex, cryptocurrencies, and precious metals:
-        // wss://quote.alltick.io/quote-b-ws-api
+        // wss://quote.alltick.co/quote-b-ws-api
         // Stock API address:
-        // wss://quote.alltick.io/quote-stock-b-ws-api
+        // wss://quote.alltick.co/quote-stock-b-ws-api
 
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-        URI uri = new URI("wss://quote.alltick.io/quote-stock-b-ws-api?token=testtoken"); // Replace with your websocket endpoint URL
+        URI uri = new URI("wss://quote.alltick.co/quote-stock-b-ws-api?token=testtoken"); // Replace with your websocket endpoint URL
 
         WebSocketJavaExample client = new WebSocketJavaExample();
 
