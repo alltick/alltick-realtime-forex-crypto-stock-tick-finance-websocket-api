@@ -110,8 +110,8 @@ Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, U
 - [HTTP Request Example](./Examples/Java/HttpJavaExample.java)
 - [WebSocket Request Example](./Examples/Java/WebSocketJavaExample.java)
 
-## Contact Us
-Email: support@alltick.co
+## API Docs
+[Email: support@alltick.co](https://apis.alltick.co/)
 
 ## Other Works
 Official Website: [https://alltick.co](https://alltick.co/en-US)
