@@ -1,6 +1,6 @@
 > [English](./static_query.md) | [中文](./static_query_cn.md)
 
-## GET Resumption Information Query API
+## GET Get Trading Halt and Resumption Information
 
 ## GET /api/suspension
 
