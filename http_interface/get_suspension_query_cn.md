@@ -1,6 +1,6 @@
 > [English](./static_query.md) | [中文](./static_query_cn.md)
 
-## GET 复牌信息查询接口
+## GET 停复牌信息查询接口
 
 ## GET /api/suspension
 
