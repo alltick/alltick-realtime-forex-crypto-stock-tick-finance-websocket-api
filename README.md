@@ -76,6 +76,7 @@ Easy-to-use and user-friendly free open-source stock API, Hong Kong stock API, U
 - [K-Line Query](./http_interface/kline_query.md)
 - [Batch Code Latest K-Line Query](./http_interface/batch_kline_query.md)
 - [Get Basic Information About Stock Products](./http_interface/static_query.md)
+- [Get Trading Halt and Resumption Information](.http_interface/get_suspension_query.md)
 - [Price Changes, Market Closure, Holidays, Limit up/down, New Listings, And Delistings](./http_interface/price_changes_closure_holidays_delistings.md)
 
 ### WebSocket Interface
