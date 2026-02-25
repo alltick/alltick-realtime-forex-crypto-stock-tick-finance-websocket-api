@@ -74,9 +74,9 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
         "symbol_list": [
             {
 		"code": "HK-1288",
-                "depth_level": 5,
-            },
-	],
+                "depth_level": 5
+            }
+	]
     }
 }
 ```
@@ -134,14 +134,14 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
             {
                 "price": "9.12",
                 "volume": "9.12",
-            },
+            }
         ],
         "asks": [
             {
                 "price": "147.12",
                 "volume": "147.12",
-            },
-        ],
+            }
+        ]
     }
 }
 ```
