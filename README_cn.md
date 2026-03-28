@@ -111,8 +111,8 @@
 - [websocket请求示例](./example/java/WebSocketJavaExample.java)
 
 
-## 联系我们
-Email: support@alltick.co
+## API 文档
+[Email: support@alltick.co](https://apis.alltick.co/)
 
 ## 其他作品
 - 官网：[https://alltick.co](https://alltick.co)
