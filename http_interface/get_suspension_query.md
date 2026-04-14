@@ -11,7 +11,7 @@ This API provides queries for suspension and resumption information from major g
 
 | Plan          | Individual request                   | Request multiple HTTP interfaces                                           |
 | ------------- | ------------------------------------------------- | ------------------------------------------------------------ |
-| Free          |Only 1 request per minute | 1、One request per second.<br />2、/batch-kline needs 10-second intervals.<br />3、Total of 10 requests per minute (every 6 seconds).<br />4、Max 14400 daily requests; excess resets at midnight. |
+| Free          |Only 1 request per minute | 1、One request per second.<br />2、/batch-kline needs 10-second intervals.<br />3、Total of 10 requests per minute (every 6 seconds).<br />4、Max 1000 daily requests; excess resets at midnight. |
 | Basic         | Only 1 request per minute                        | 1、One request per second.<br />2、/batch-kline: 1 request every 3 seconds.<br />3、Total of 60 requests per minute (1 request per second).<br />4、Max 86400 daily requests; excess resets at midnight. |
 | Premium       | Only 1 request per minute                     | 1、Combined interfaces: 10 requests/second.<br />2、/batch-kline: 1 request/2 seconds.<br />3、Total: 600 requests/minute (10/second).<br />4、Daily limit: 864,000 requests; reset daily at midnight if exceeded. |
 | Professional  |Only 1 request per minute                     | 1、Combined interfaces: 20 requests/second.<br />2、/batch-kline: 1 request/second interval.<br />3、Total: 1200 requests/minute (20/second).<br />4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded. |
