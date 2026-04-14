@@ -57,7 +57,7 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 ### Symbol Definition
 | Field        | Name       | Type   | Required | Description                |
 | ------------ | ---------- | ------ | -------- | --------------------------|
-| code         | Code       | string | Yes      | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)  |
+| code         | Code       | string | Yes      | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) <br/> Note: The case of the code value must be consistent with the code in the product list.  |
 | depth_level  | Depth Level| uint32 | No       | If there is no depth_level field, the backend will only provide one level of quotes. If the requested level is greater than the actual quote level, or if there is no depth_level field, the backend will provide as many levels as there are actual quotes |
 ## Request Example
 ```json
