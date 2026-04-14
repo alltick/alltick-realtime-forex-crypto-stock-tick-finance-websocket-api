@@ -64,7 +64,7 @@
 |trace|string| 是 ||
 |data|object| 是 ||
 |» symbol_list|[object]| 是 ||
-|»» code|string| 否 |请查看code列表，选择你要查询的code：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)|
+|»» code|string| 否 |请查看code列表，选择你要查询的code：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)<br />注意：code值大小写要与产品列表中的code保持一致|
 
 > 返回示例
 
