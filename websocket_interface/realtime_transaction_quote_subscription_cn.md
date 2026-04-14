@@ -56,7 +56,7 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 ### symbol定义
 | 字段 | 名称 | 类型   | 必填项 | 说明                     |
 | ---- | ---- | ------ | ------ | ------------------------ |
-| code | 代码 | string | 是     | 具体内容，请查阅code列表：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
+| code | 代码 | string | 是     | 具体内容，请查阅code列表：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) <br />注意：code值大小写要与产品列表中的code保持一致|
 ## 请求示例
 ```json
 {
