@@ -55,7 +55,7 @@ Each WebSocket connection allows one active subscription at a time.
 ### Symbol Definition
 | Field | Name | Type   | Required | Description                |
 | ---- | ---- | ------ | -------- | --------------------------|
-| code | Code | string | Yes      | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)   |
+| code | Code | string | Yes      | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) <br/> Note: The case of the code value must be consistent with the code in the product list. |
 ## Request Example
 ```json
 {
