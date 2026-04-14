@@ -69,7 +69,7 @@ Encode the following JSON into URL format and assign it to the `query` query str
 | trace      | string | Yes      |             |
 | data       | object | Yes      |             |
 | » symbol_list | [object] | Yes      |             |
-| » » code       | string | No       | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)     |
+| » » code       | string | No       | Refer to the code list and select the code you want to query：[Click on the code list](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) <br/> Note: The case of the code value must be consistent with the code in the product list.     |
 
 > Response Example
 
