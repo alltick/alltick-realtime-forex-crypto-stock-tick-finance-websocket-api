@@ -62,7 +62,7 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 ### symbol定义
 | 字段        | 名称     | 类型   | 必填项 | 说明                                                         |
 | ----------- | -------- | ------ | ------ | ------------------------------------------------------------ |
-| code        | 代码     | string | 是     | 具体内容，请查阅code列表 ：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)                                    |
+| code        | 代码     | string | 是     | 具体内容，请查阅code列表 ：[点击code列表](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)     <br />注意：code值大小写要与产品列表中的code保持一致                               |
 | depth_level | 深度层级 | uint32 | 否     | 如果没有depth_level字段时，后台只会提供一层的报价，请求的层级大于实际报价层级，或者如果没有depth_level字段时，则后台按实际报价有多少层给多少层 |
 ## 请求示例
 ```json
