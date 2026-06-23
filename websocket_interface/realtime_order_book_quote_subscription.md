@@ -15,7 +15,7 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 
 |                    | FX、Metals      | Cryptocurrency  | HK Stocks        | CN Stocks       |
 | ---------------------- | --------------- | --------------- | ---------------- | --------------- |
-| Order Book Description | Maximum 1 gears<br />(Only Price, No Volume) | Maximum 5 gears | Maximum 10 gears | Maximum 5 gears |
+| Order Book Description | Maximum 1 gears | Maximum 5 gears | Maximum 10 gears | Maximum 5 gears |
 
 
 ## Interface Limitations
@@ -103,8 +103,8 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 | Field      | Name         | Type   | Description                |
 | ---------- | ------------ | ------ | -------------------------- |
 | code       | Code         | string | Specific content, refer to the code list |
-| seq        | Quote Number | string |                             |
-| tick_time  | Quote Timestamp | string | In milliseconds          |
+| seq        | Quote Number | integer |                             |
+| tick_time  | Quote Timestamp | integer | In milliseconds          |
 | bids       | Bid Depth    | array  | See below for bids definition |
 | asks       | Ask Depth    | array  | See below for asks definition |
 ### bids definition
@@ -123,8 +123,8 @@ This interface supports subscribing to the latest market depth (real-time tick-b
     "cmd_id":22999,
     "data":{
 	"code": "HK-1288",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "seq": 1605509068000001,
+        "tick_time": 1605509068,
         "bids": [
             {
                 "price": "9.12",
