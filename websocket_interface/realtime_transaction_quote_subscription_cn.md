@@ -100,8 +100,8 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 | 字段            | 名称       | 类型   | 说明                       |
 | --------------- | ---------- | ------ | -------------------------- |
 | code            | 代码       | string | 具体内容，请查阅code列表   |
-| seq             | 报价序号   | string |                            |
-| tick_time       | 报价时间戳 | string | 单位毫秒                   |
+| seq             | 报价序号   | integer |                            |
+| tick_time       | 报价时间戳 | integer | 单位毫秒                   |
 | price           | 成交价     | string | 最新成交价                 |
 | volume          | 成交量     | string | 最新一口成交价对应的成交量  |
 | turnover        | 成交额     | string | 成交额：<br />1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price * volume  <br />2、股票、加密货币正常返回成交额。                         |
@@ -112,8 +112,8 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
     "cmd_id":22998,
     "data":{
 	"code": "1288.HK",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "seq": 1605509068000001,
+        "tick_time": 1605509068,
         "price": "651.12",
         "volume": "300",
         "turnover": "12345.6",
