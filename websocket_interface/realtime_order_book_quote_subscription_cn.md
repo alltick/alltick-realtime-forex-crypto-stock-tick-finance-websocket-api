@@ -14,7 +14,7 @@
 <br />3.2 存在单边深度是空的情况，例如股票涨停跌停时，单边盘口可能是空的
 |       | 外汇、贵金属、原油、CFD指数 | 加密货币 | 港股     | 美股    | 沪深A股 |
 | -------- | ------------------ | -------- | -------- | ------- | ------- |
-| 深度说明 | 最大1档(只有委托价，没有量)| 最大5档  | 最大10档 | 最大1档 | 最大5档 |
+| 深度说明 | 最大1档| 最大5档  | 最大10档 | 最大1档 | 最大5档 |
 
 ## 接口限制
 - 1、请务必阅读：[Websocket接口限制说明](https://github.com/alltick/alltick-realtime-forex-crypto-stock-tick-finance-websocket-api/blob/main/websocket_interface/interface_limitation_cn.md)
@@ -108,8 +108,8 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 | 字段      | 名称       | 类型   | 说明                     |
 | --------- | ---------- | ------ | ------------------------ |
 | code      | 代码       | string | 具体内容，请查阅code列表 |
-| seq       | 报价序号   | string |                          |
-| tick_time | 报价时间戳 | string | 单位毫秒                 |
+| seq       | 报价序号   | integer |                          |
+| tick_time | 报价时间戳 | integer | 单位毫秒                 |
 | bids      | bid深度    | array  | 见下面bids定义           |
 | asks      | ask深度    | array  | 见下面asks定义           |
 ### bids定义
@@ -128,8 +128,8 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
     "cmd_id":22999,
     "data":{
 	"code": "HK-1288",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "seq": 1605509068000001,
+        "tick_time": 1605509068,
         "bids": [
             {
                 "price": "9.12",
