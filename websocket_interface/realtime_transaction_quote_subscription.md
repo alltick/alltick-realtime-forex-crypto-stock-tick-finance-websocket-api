@@ -99,8 +99,8 @@ Each WebSocket connection allows one active subscription at a time.
 | Field            | Name          | Type   | Description                 |
 | ---------------- | ------------- | ------ | --------------------------- |
 | code             | Code          | string | Specific content, refer to the code list |
-| seq              | Quote Number  | string |                             |
-| tick_time        | Quote Timestamp | string | In milliseconds             |
+| seq              | Quote Number  | integer |                             |
+| tick_time        | Quote Timestamp | integer | In milliseconds             |
 | price            | Transaction Price | string |    Last Price                       |
 | volume           | Transaction Volume | string |   Last Trade Volume                   |
 | turnover         | Transaction Turnover | string |  Turnover:<br/>1、For forex, precious metals, and energy, turnover is not provided. You can calculate it using the formula: turnover = price * volume.<br/>2、For stocks and cryptocurrencies, turnover is returned normally.                      |
@@ -111,8 +111,8 @@ Each WebSocket connection allows one active subscription at a time.
     "cmd_id":22998,
     "data":{
 	"code": "1288.HK",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "seq": 1605509068000001,
+        "tick_time": 1605509068,
         "price": "651.12",
         "volume": "300",
         "turnover": "12345.6",
