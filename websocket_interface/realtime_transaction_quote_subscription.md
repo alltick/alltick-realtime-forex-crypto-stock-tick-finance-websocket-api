@@ -103,7 +103,7 @@ Each WebSocket connection allows one active subscription at a time.
 | tick_time        | Quote Timestamp | integer | In milliseconds             |
 | price            | Transaction Price | string |    Last Price                       |
 | volume           | Transaction Volume | string |   Last Trade Volume                   |
-| turnover         | Transaction Turnover | string |  Turnover:<br/>1、For forex, precious metals, and energy, turnover is not provided. You can calculate it using the formula: turnover = price * volume.<br/>2、For stocks and cryptocurrencies, turnover is returned normally.                      |
+| turnover         | Transaction Turnover | string |  Turnover                    |
 | trade_direction  | Transaction Direction | uint32 | 0 as default, 1 for BUY, 2 for SELL |
 ## Response Example
 ```json
